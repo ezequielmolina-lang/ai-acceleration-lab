@@ -219,44 +219,99 @@
             </div>
             <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-6">
                 <!-- L -->
-                <div class="card-hover bg-gradient-to-br from-wb-purple to-wb-purple-dark rounded-2xl p-6 text-white text-center">
-                    <div class="w-14 h-14 bg-white/15 rounded-xl flex items-center justify-center mx-auto mb-4">
-                        <span class="text-2xl font-extrabold">L</span>
+                <div class="flip-card cursor-pointer min-h-[280px]" onclick="this.classList.toggle('flipped')">
+                    <div class="flip-card-inner relative w-full h-full min-h-[280px]">
+                        <div class="flip-card-front absolute inset-0 bg-gradient-to-br from-wb-purple to-wb-purple-dark rounded-2xl p-6 text-white text-center flex flex-col items-center justify-center">
+                            <div class="w-14 h-14 bg-white/15 rounded-xl flex items-center justify-center mx-auto mb-4">
+                                <span class="text-2xl font-extrabold">L</span>
+                            </div>
+                            <h3 class="font-bold text-lg mb-2">Localiza</h3>
+                            <p class="text-white/75 text-sm leading-relaxed">Localiza tus fugas de tiempo y sus causas.</p>
+                            <span class="mt-3 text-xs text-wb-orange-light font-medium">Click para ver ejemplo</span>
+                        </div>
+                        <div class="flip-card-back absolute inset-0 bg-wb-orange rounded-2xl p-5 text-white flex flex-col items-center justify-center text-center">
+                            <span class="text-xs font-bold uppercase tracking-wide mb-2 text-white/70">Ejemplo LC6</span>
+                            <p class="text-sm leading-relaxed">"Paso 3 horas/semana formateando BTORs. Otras 2 horas buscando emails viejos sobre procurement. Y 4 horas preparando briefings para misiones."</p>
+                            <p class="text-xs text-white/60 mt-2 italic">Resultado: identificas tus 3 mayores fugas de tiempo</p>
+                            <span class="mt-2 text-xs text-white/50">Click para volver</span>
+                        </div>
                     </div>
-                    <h3 class="font-bold text-lg mb-2">Localiza</h3>
-                    <p class="text-white/75 text-sm leading-relaxed">Localiza tus fugas de tiempo y sus causas. Identifica donde pierdes tiempo en tu flujo de trabajo y por que ocurren esas ineficiencias.</p>
                 </div>
                 <!-- I -->
-                <div class="card-hover bg-gradient-to-br from-wb-purple to-wb-purple-dark rounded-2xl p-6 text-white text-center">
-                    <div class="w-14 h-14 bg-white/15 rounded-xl flex items-center justify-center mx-auto mb-4">
-                        <span class="text-2xl font-extrabold">I</span>
+                <div class="flip-card cursor-pointer min-h-[280px]" onclick="this.classList.toggle('flipped')">
+                    <div class="flip-card-inner relative w-full h-full min-h-[280px]">
+                        <div class="flip-card-front absolute inset-0 bg-gradient-to-br from-wb-purple to-wb-purple-dark rounded-2xl p-6 text-white text-center flex flex-col items-center justify-center">
+                            <div class="w-14 h-14 bg-white/15 rounded-xl flex items-center justify-center mx-auto mb-4">
+                                <span class="text-2xl font-extrabold">I</span>
+                            </div>
+                            <h3 class="font-bold text-lg mb-2">Implementa</h3>
+                            <p class="text-white/75 text-sm leading-relaxed">Implementa soluciones eticas con IA.</p>
+                            <span class="mt-3 text-xs text-wb-orange-light font-medium">Click para ver ejemplo</span>
+                        </div>
+                        <div class="flip-card-back absolute inset-0 bg-wb-orange rounded-2xl p-5 text-white flex flex-col items-center justify-center text-center">
+                            <span class="text-xs font-bold uppercase tracking-wide mb-2 text-white/70">Ejemplo LC6</span>
+                            <p class="text-sm leading-relaxed">Creas un Mai Skill para BTORs, configuras un Claude Project para analisis de portafolio, y usas el transcript de Teams para generar minutas automaticamente.</p>
+                            <p class="text-xs text-white/60 mt-2 italic">Resultado: 3 horas de BTOR ahora son 15 minutos</p>
+                            <span class="mt-2 text-xs text-white/50">Click para volver</span>
+                        </div>
                     </div>
-                    <h3 class="font-bold text-lg mb-2">Implementa</h3>
-                    <p class="text-white/75 text-sm leading-relaxed">Implementa soluciones eticas con IA. Aplica herramientas de inteligencia artificial de manera responsable y alineada con los valores institucionales.</p>
                 </div>
                 <!-- B -->
-                <div class="card-hover bg-gradient-to-br from-wb-purple to-wb-purple-dark rounded-2xl p-6 text-white text-center">
-                    <div class="w-14 h-14 bg-white/15 rounded-xl flex items-center justify-center mx-auto mb-4">
-                        <span class="text-2xl font-extrabold">B</span>
+                <div class="flip-card cursor-pointer min-h-[280px]" onclick="this.classList.toggle('flipped')">
+                    <div class="flip-card-inner relative w-full h-full min-h-[280px]">
+                        <div class="flip-card-front absolute inset-0 bg-gradient-to-br from-wb-purple to-wb-purple-dark rounded-2xl p-6 text-white text-center flex flex-col items-center justify-center">
+                            <div class="w-14 h-14 bg-white/15 rounded-xl flex items-center justify-center mx-auto mb-4">
+                                <span class="text-2xl font-extrabold">B</span>
+                            </div>
+                            <h3 class="font-bold text-lg mb-2">Busca</h3>
+                            <p class="text-white/75 text-sm leading-relaxed">Busca impacto real en tu trabajo diario.</p>
+                            <span class="mt-3 text-xs text-wb-orange-light font-medium">Click para ver ejemplo</span>
+                        </div>
+                        <div class="flip-card-back absolute inset-0 bg-wb-orange rounded-2xl p-5 text-white flex flex-col items-center justify-center text-center">
+                            <span class="text-xs font-bold uppercase tracking-wide mb-2 text-white/70">Ejemplo LC6</span>
+                            <p class="text-sm leading-relaxed">Pruebas el skill de ISR con tu proyecto real de Bolivia. El borrador sale en 5 min. Lo revisas, ajustas 2 parrafos, y lo envias. Antes tomaba medio dia.</p>
+                            <p class="text-xs text-white/60 mt-2 italic">Resultado: mides el ahorro real -- 4 horas/semana</p>
+                            <span class="mt-2 text-xs text-white/50">Click para volver</span>
+                        </div>
                     </div>
-                    <h3 class="font-bold text-lg mb-2">Busca</h3>
-                    <p class="text-white/75 text-sm leading-relaxed">Busca impacto real. Asegurate de que las soluciones implementadas generen resultados tangibles y medibles en tus operaciones.</p>
                 </div>
                 <!-- R -->
-                <div class="card-hover bg-gradient-to-br from-wb-purple to-wb-purple-dark rounded-2xl p-6 text-white text-center">
-                    <div class="w-14 h-14 bg-white/15 rounded-xl flex items-center justify-center mx-auto mb-4">
-                        <span class="text-2xl font-extrabold">R</span>
+                <div class="flip-card cursor-pointer min-h-[280px]" onclick="this.classList.toggle('flipped')">
+                    <div class="flip-card-inner relative w-full h-full min-h-[280px]">
+                        <div class="flip-card-front absolute inset-0 bg-gradient-to-br from-wb-purple to-wb-purple-dark rounded-2xl p-6 text-white text-center flex flex-col items-center justify-center">
+                            <div class="w-14 h-14 bg-white/15 rounded-xl flex items-center justify-center mx-auto mb-4">
+                                <span class="text-2xl font-extrabold">R</span>
+                            </div>
+                            <h3 class="font-bold text-lg mb-2">Refuerza</h3>
+                            <p class="text-white/75 text-sm leading-relaxed">Refuerza exitos y aprende de fracasos.</p>
+                            <span class="mt-3 text-xs text-wb-orange-light font-medium">Click para ver ejemplo</span>
+                        </div>
+                        <div class="flip-card-back absolute inset-0 bg-wb-orange rounded-2xl p-5 text-white flex flex-col items-center justify-center text-center">
+                            <span class="text-xs font-bold uppercase tracking-wide mb-2 text-white/70">Ejemplo LC6</span>
+                            <p class="text-sm leading-relaxed">El BTOR salio perfecto pero el email a la Viceministra sono muy frio. Ajustas tu skill: "Para contrapartes gubernamentales, empezar siempre reconociendo logros antes de plantear preocupaciones."</p>
+                            <p class="text-xs text-white/60 mt-2 italic">Resultado: iteras y mejoras tu sistema continuamente</p>
+                            <span class="mt-2 text-xs text-white/50">Click para volver</span>
+                        </div>
                     </div>
-                    <h3 class="font-bold text-lg mb-2">Refuerza</h3>
-                    <p class="text-white/75 text-sm leading-relaxed">Refuerza exitos y aprende de fracasos. Consolida lo que funciona, analiza lo que no, y ajusta tu enfoque continuamente.</p>
                 </div>
                 <!-- E -->
-                <div class="card-hover bg-gradient-to-br from-wb-purple to-wb-purple-dark rounded-2xl p-6 text-white text-center">
-                    <div class="w-14 h-14 bg-white/15 rounded-xl flex items-center justify-center mx-auto mb-4">
-                        <span class="text-2xl font-extrabold">E</span>
+                <div class="flip-card cursor-pointer min-h-[280px]" onclick="this.classList.toggle('flipped')">
+                    <div class="flip-card-inner relative w-full h-full min-h-[280px]">
+                        <div class="flip-card-front absolute inset-0 bg-gradient-to-br from-wb-purple to-wb-purple-dark rounded-2xl p-6 text-white text-center flex flex-col items-center justify-center">
+                            <div class="w-14 h-14 bg-white/15 rounded-xl flex items-center justify-center mx-auto mb-4">
+                                <span class="text-2xl font-extrabold">E</span>
+                            </div>
+                            <h3 class="font-bold text-lg mb-2">Expande</h3>
+                            <p class="text-white/75 text-sm leading-relaxed">Expande de forma inteligente a tu equipo.</p>
+                            <span class="mt-3 text-xs text-wb-orange-light font-medium">Click para ver ejemplo</span>
+                        </div>
+                        <div class="flip-card-back absolute inset-0 bg-wb-orange rounded-2xl p-5 text-white flex flex-col items-center justify-center text-center">
+                            <span class="text-xs font-bold uppercase tracking-wide mb-2 text-white/70">Ejemplo LC6</span>
+                            <p class="text-sm leading-relaxed">Compartes tu Mai Skill de ISR con el equipo LC6. Creas un canal de Teams para intercambiar "recetas" de prompts. En un mes, todo el equipo ahorra 15+ horas semanales colectivamente.</p>
+                            <p class="text-xs text-white/60 mt-2 italic">Resultado: de practica personal a transformacion colectiva</p>
+                            <span class="mt-2 text-xs text-white/50">Click para volver</span>
+                        </div>
                     </div>
-                    <h3 class="font-bold text-lg mb-2">Expande</h3>
-                    <p class="text-white/75 text-sm leading-relaxed">Expande de forma inteligente. Escala las soluciones exitosas a otros procesos y equipos de manera estrategica y sostenible.</p>
                 </div>
             </div>
         </div>
