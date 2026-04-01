@@ -120,13 +120,6 @@
         .nav-link:hover::after, .nav-link.active::after {
             width: 100%;
         }
-        .skill-block {
-            max-height: 400px;
-            overflow-y: auto;
-        }
-        .skill-block::-webkit-scrollbar { width: 6px; }
-        .skill-block::-webkit-scrollbar-track { background: #f1f1f1; border-radius: 3px; }
-        .skill-block::-webkit-scrollbar-thumb { background: #472D8C; border-radius: 3px; }
         .section-divider {
             height: 3px;
             background: linear-gradient(90deg, transparent, #E5751F, transparent);
@@ -158,12 +151,9 @@
                     <a href="#libre" class="nav-link text-white/80 hover:text-white text-sm font-medium">LIBRE</a>
                     <a href="#hacks" class="nav-link text-white/80 hover:text-white text-sm font-medium">Hacks</a>
                     <a href="#delegation" class="nav-link text-white/80 hover:text-white text-sm font-medium">Delegacion</a>
-                    <a href="#skill" class="nav-link text-white/80 hover:text-white text-sm font-medium">Skill Mai</a>
-                    <a href="#tutorial" class="nav-link text-white/80 hover:text-white text-sm font-medium">Tutorial</a>
-                    <a href="#biblioteca" class="nav-link text-white/80 hover:text-white text-sm font-medium">Biblioteca</a>
-                    <a href="#claude-tips" class="nav-link text-white/80 hover:text-white text-sm font-medium">Tips Claude</a>
-                    <a href="#tools" class="nav-link text-white/80 hover:text-white text-sm font-medium">Herramientas</a>
-                    <a href="#learning" class="nav-link text-white/80 hover:text-white text-sm font-medium">Aprendizaje</a>
+                    <a href="#skills" class="nav-link text-white/80 hover:text-white text-sm font-medium">Skills</a>
+                    <a href="#herramientas" class="nav-link text-white/80 hover:text-white text-sm font-medium">3 Herramientas</a>
+                    <a href="#learning" class="nav-link text-white/80 hover:text-white text-sm font-medium">Recursos</a>
                 </div>
                 <button id="mobile-menu-btn" class="md:hidden text-white" onclick="document.getElementById('mobile-menu').classList.toggle('hidden')">
                     <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/></svg>
@@ -172,13 +162,10 @@
             <div id="mobile-menu" class="hidden md:hidden pb-4">
                 <a href="#libre" class="block py-2 text-white/80 hover:text-white text-sm" onclick="this.parentElement.classList.add('hidden')">Metodo LIBRE</a>
                 <a href="#hacks" class="block py-2 text-white/80 hover:text-white text-sm" onclick="this.parentElement.classList.add('hidden')">Hacks</a>
-                <a href="#delegation" class="block py-2 text-white/80 hover:text-white text-sm" onclick="this.parentElement.classList.add('hidden')">Brief de Delegacion</a>
-                <a href="#skill" class="block py-2 text-white/80 hover:text-white text-sm" onclick="this.parentElement.classList.add('hidden')">Plantilla Skill Mai</a>
-                <a href="#tutorial" class="block py-2 text-white/80 hover:text-white text-sm" onclick="this.parentElement.classList.add('hidden')">Tutorial Skills</a>
-                <a href="#biblioteca" class="block py-2 text-white/80 hover:text-white text-sm" onclick="this.parentElement.classList.add('hidden')">Biblioteca de Skills</a>
-                <a href="#claude-tips" class="block py-2 text-white/80 hover:text-white text-sm" onclick="this.parentElement.classList.add('hidden')">Tips de Claude Pro</a>
-                <a href="#tools" class="block py-2 text-white/80 hover:text-white text-sm" onclick="this.parentElement.classList.add('hidden')">Comparacion de Herramientas</a>
-                <a href="#learning" class="block py-2 text-white/80 hover:text-white text-sm" onclick="this.parentElement.classList.add('hidden')">Sigue Aprendiendo</a>
+                <a href="#delegation" class="block py-2 text-white/80 hover:text-white text-sm" onclick="this.parentElement.classList.add('hidden')">Delegacion</a>
+                <a href="#skills" class="block py-2 text-white/80 hover:text-white text-sm" onclick="this.parentElement.classList.add('hidden')">Skills</a>
+                <a href="#herramientas" class="block py-2 text-white/80 hover:text-white text-sm" onclick="this.parentElement.classList.add('hidden')">Tus 3 Herramientas</a>
+                <a href="#learning" class="block py-2 text-white/80 hover:text-white text-sm" onclick="this.parentElement.classList.add('hidden')">Recursos</a>
             </div>
         </div>
     </nav>
@@ -510,1255 +497,127 @@
 
     <div class="section-divider max-w-4xl mx-auto"></div>
 
-    <!-- PLANTILLA DE SKILL MAI -->
-    <section id="skill" class="py-20 bg-white">
-        <div class="max-w-4xl mx-auto px-4 sm:px-6">
-            <div class="text-center mb-8">
-                <span class="text-wb-orange font-semibold text-sm tracking-widest uppercase">Expande</span>
-                <h2 class="text-3xl sm:text-4xl font-bold text-wb-purple mt-2 mb-4">Plantilla de Skill para Mai</h2>
-            </div>
-
-            <!-- QUE ES UN SKILL -->
-            <div class="bg-gradient-to-r from-purple-50 to-orange-50 rounded-2xl p-6 mb-10 border border-purple-100">
-                <div class="flex flex-col md:flex-row gap-5 items-start">
-                    <div class="flex-1">
-                        <h3 class="font-bold text-wb-purple text-lg mb-2">Que es un Skill en Mai?</h3>
-                        <p class="text-gray-600 text-sm leading-relaxed mb-2">Un <strong>Skill</strong> es un conjunto de instrucciones persistentes que le dicen a Mai como comportarse. Es la diferencia entre hablarle a un desconocido vs. a un colega que lleva 5 anos en tu equipo y conoce tus proyectos, tus formatos y tu estilo.</p>
-                        <p class="text-gray-600 text-sm leading-relaxed mb-2">Como dice <strong>Ethan Mollick</strong> (Wharton): <em>"La habilidad mas importante de 2026 no es escribir prompts -- es disenar sistemas de IA que cualquiera pueda usar."</em> Los Skills son exactamente eso.</p>
-                        <p class="text-gray-600 text-sm leading-relaxed">Lo mejor: <strong>cualquiera puede crearlos</strong>. Si puedes explicarle a un colega nuevo como hacer una tarea, puedes crear un Skill. Instalalos en <a href="https://ai.worldbank.org/mai/skills/" target="_blank" class="text-wb-orange font-semibold hover:underline">ai.worldbank.org/mai/skills/</a></p>
-                    </div>
-                    <div class="md:w-64 shrink-0 bg-white rounded-xl p-4 shadow-sm border border-gray-100">
-                        <p class="text-xs font-bold text-red-500 mb-1">Sin Skill:</p>
-                        <p class="text-xs text-gray-500 mb-3">"Ayudame con mi ISR" &rarr; generico</p>
-                        <p class="text-xs font-bold text-green-600 mb-1">Con Skill:</p>
-                        <p class="text-xs text-gray-500">"Tarea 1 del ISR: justificar downgrade de IP" &rarr; formato perfecto</p>
-                    </div>
-                </div>
-            </div>
-
-            <p class="text-center text-gray-600 max-w-2xl mx-auto mb-10 text-sm">Copia esta plantilla y personalizala con tus datos en la seccion "About Me".</p>
-            <div class="relative bg-gray-900 rounded-2xl overflow-hidden shadow-xl">
-                <div class="flex items-center justify-between px-5 py-3 bg-gray-800 border-b border-gray-700">
-                    <div class="flex items-center gap-2">
-                        <div class="w-3 h-3 rounded-full bg-red-500"></div>
-                        <div class="w-3 h-3 rounded-full bg-yellow-500"></div>
-                        <div class="w-3 h-3 rounded-full bg-green-500"></div>
-                        <span class="ml-3 text-gray-400 text-sm font-mono">lc6-operations-skill.md</span>
-                    </div>
-                    <button id="copy-btn" onclick="copySkill()" class="flex items-center gap-2 bg-wb-orange hover:bg-wb-orange-light text-white text-sm font-semibold px-4 py-1.5 rounded-lg transition-colors">
-                        <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 16H6a2 2 0 01-2-2V6a2 2 0 012-2h8a2 2 0 012 2v2m-6 12h8a2 2 0 002-2v-8a2 2 0 00-2-2h-8a2 2 0 00-2 2v8a2 2 0 002 2z"/></svg>
-                        Copiar al portapapeles
-                    </button>
-                </div>
-                <div class="skill-block p-5 font-mono text-sm text-gray-300 leading-relaxed whitespace-pre-wrap" id="skill-content">## Role
-You are an AI assistant for a World Bank LC6 operations staff member covering Bolivia, Peru, Chile, Ecuador, and Colombia.
-
-## Institutional Knowledge
-- WB project cycle: PCN > Concept Review > PAD > Appraisal > Board > Effectiveness > Implementation > MTR > ICR
-- ISR ratings: Highly Satisfactory (HS), Satisfactory (S), Moderately Satisfactory (MS), Moderately Unsatisfactory (MU), Unsatisfactory (U), Highly Unsatisfactory (HU)
-- Document types: Aide-Memoire, BTOR (Back-to-Office Report), ISR (Implementation Status Report), ICR (Implementation Completion Report), PAD (Project Appraisal Document), PCN (Project Concept Note), Project Paper, Additional Financing
-- Key abbreviations: TTL (Task Team Leader), CD (Country Director), RVP (Regional Vice President), CMU (Country Management Unit), GP (Global Practice), ESF (Environmental and Social Framework), PDO (Project Development Objective), DLI (Disbursement-Linked Indicator), IPF (Investment Project Financing), PforR (Program for Results), AF (Additional Financing), MTR (Mid-Term Review)
-
-## About Me
-[CUSTOMIZE: Your title, sector focus, active projects, key counterparts]
-
-## Default Behaviors
-- Structure all outputs with clear headers and bullet points
-- Include Agreed Actions tables with columns: Action | Responsible | Deadline
-- Use professional but warm tone for counterpart communications
-- Direct and concise for internal communications
-- Flag uncertainties and assumptions explicitly
-- When given raw notes, auto-organize into standard WB document format
-- Expand acronyms on first use in any document
-
-## Task-Specific Formats
-
-### For BTORs (Back-to-Office Reports):
-Sections: Purpose of Mission | Key Meetings and Participants | Main Findings | Agreed Actions (table) | Next Steps | Annexes
-
-### For ISR Preparation:
-Structure by: PDO Progress | Implementation Progress (by component) | Risk Assessment | Key Issues | Recommended Actions
-
-### For Emails to Counterparts:
-Professional, diplomatic tone | Clear subject line | Context paragraph | Key points as bullets | Specific next steps with dates | Warm closing
-
-### For Meeting Prep:
-Briefing note format: Context | Key Issues | Talking Points | Anticipated Questions | Background Documents
-
-## Never
-- Fabricate project data, disbursement figures, or ratings
-- Assume ISR ratings without being told
-- Use casual language in documents for government counterparts
-- Skip the Next Steps or Agreed Actions section
-- Present uncertain information as fact</div>
-            </div>
-            <div id="copy-toast" class="hidden fixed bottom-8 left-1/2 -translate-x-1/2 bg-green-600 text-white px-6 py-3 rounded-lg shadow-lg font-semibold text-sm z-50">
-                Copiado al portapapeles
-            </div>
-        </div>
-    </section>
-
-    <div class="section-divider max-w-4xl mx-auto"></div>
-
-    <!-- COMO USAR LOS SKILLS - TUTORIAL -->
-    <section id="tutorial" class="py-20 bg-white">
+    <!-- MAI SKILLS (COMPACT) -->
+    <section id="skills" class="py-14 bg-white">
         <div class="max-w-5xl mx-auto px-4 sm:px-6">
-            <div class="text-center mb-14">
-                <span class="text-wb-orange font-semibold text-sm tracking-widest uppercase">Guia Rapida</span>
-                <h2 class="text-3xl sm:text-4xl font-bold text-wb-purple mt-2 mb-4">Como Usar los Skills</h2>
-                <p class="text-gray-600 max-w-2xl mx-auto">Aprende a instalar y usar los Skills de Mai en 2 pasos simples. Los Skills transforman a Mai de un asistente generico a un experto en operaciones del Banco Mundial.</p>
+            <div class="text-center mb-4">
+                <span class="text-wb-orange font-semibold text-sm tracking-widest uppercase">El siguiente nivel</span>
+                <h2 class="text-3xl font-bold text-wb-purple mt-2 mb-3">De Prompts a Workflows Automatizados</h2>
             </div>
-
-            <!-- Paso 1 -->
-            <div class="mb-12">
-                <div class="flex items-start gap-5 mb-6">
-                    <div class="w-12 h-12 bg-wb-purple rounded-xl flex items-center justify-center shrink-0">
-                        <span class="text-white font-extrabold text-lg">1</span>
-                    </div>
-                    <div>
-                        <h3 class="text-xl font-bold text-wb-purple mb-2">Paso 1: Instalar el Skill</h3>
-                        <p class="text-gray-600">Solo necesitas hacer esto una vez por skill. Despues queda permanentemente en tu cuenta.</p>
+            <div class="bg-gradient-to-r from-gray-50 to-purple-50 rounded-2xl p-5 mb-8 border border-purple-100 max-w-3xl mx-auto">
+                <div class="flex flex-col sm:flex-row items-center gap-4 text-center sm:text-left">
+                    <div class="flex items-center gap-2 text-xs text-gray-400 shrink-0">
+                        <span class="bg-gray-200 text-gray-500 px-2 py-1 rounded font-semibold">2024</span>
+                        <span>Escribir prompts</span>
+                        <svg class="w-4 h-4 text-gray-300" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/></svg>
+                        <span class="bg-wb-purple/10 text-wb-purple px-2 py-1 rounded font-semibold">2025</span>
+                        <span>Delegar bien</span>
+                        <svg class="w-4 h-4 text-gray-300" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/></svg>
+                        <span class="bg-wb-orange text-white px-2 py-1 rounded font-semibold">2026</span>
+                        <span>Automatizar</span>
                     </div>
                 </div>
-                <div class="ml-0 sm:ml-17 bg-gray-50 rounded-2xl p-6 border border-gray-200">
-                    <ol class="space-y-4 text-gray-700">
-                        <li class="flex items-start gap-3">
-                            <span class="w-7 h-7 bg-wb-orange/15 text-wb-orange rounded-full flex items-center justify-center shrink-0 font-bold text-sm mt-0.5">a</span>
-                            <span>Ve a <strong class="text-wb-purple">ai.worldbank.org/mai/skills/</strong></span>
-                        </li>
-                        <li class="flex items-start gap-3">
-                            <span class="w-7 h-7 bg-wb-orange/15 text-wb-orange rounded-full flex items-center justify-center shrink-0 font-bold text-sm mt-0.5">b</span>
-                            <span>Haz clic en <strong class="text-wb-purple">"+ Create Skill"</strong></span>
-                        </li>
-                        <li class="flex items-start gap-3">
-                            <span class="w-7 h-7 bg-wb-orange/15 text-wb-orange rounded-full flex items-center justify-center shrink-0 font-bold text-sm mt-0.5">c</span>
-                            <span>Copia el <strong>Nombre</strong>, <strong>Descripcion</strong> y <strong>Contenido</strong> del skill que quieras de la Biblioteca de abajo</span>
-                        </li>
-                        <li class="flex items-start gap-3">
-                            <span class="w-7 h-7 bg-wb-orange/15 text-wb-orange rounded-full flex items-center justify-center shrink-0 font-bold text-sm mt-0.5">d</span>
-                            <span>Activa el skill con el toggle <strong class="text-wb-purple">"Active"</strong></span>
-                        </li>
-                        <li class="flex items-start gap-3">
-                            <span class="w-7 h-7 bg-green-100 text-green-700 rounded-full flex items-center justify-center shrink-0 font-bold text-sm mt-0.5">&#10003;</span>
-                            <span class="text-green-700 font-medium">El skill ahora esta permanentemente en tu cuenta de Mai</span>
-                        </li>
-                    </ol>
-                </div>
+                <p class="text-gray-600 text-sm leading-relaxed mt-3">Los <strong>Skills de Mai</strong> son el paso de "repetir los mismos prompts cada vez" a tener <strong>workflows persistentes</strong> que ya saben quien sos, como trabajas y que necesitas. Son instrucciones que se quedan en tu cuenta -- como entrenar a un colega nuevo una sola vez.</p>
             </div>
-
-            <!-- Paso 2 -->
-            <div class="mb-14">
-                <div class="flex items-start gap-5 mb-6">
-                    <div class="w-12 h-12 bg-wb-purple rounded-xl flex items-center justify-center shrink-0">
-                        <span class="text-white font-extrabold text-lg">2</span>
+            <div class="grid grid-cols-1 sm:grid-cols-3 gap-5">
+                <!-- Card 1: Que es un Skill -->
+                <a href="skills.html#que-es" class="group flex flex-col bg-gradient-to-br from-purple-50 to-white rounded-xl px-5 py-5 border border-purple-100/60 hover:border-wb-orange/40 hover:shadow-md transition-all duration-200">
+                    <div class="flex items-center gap-3 mb-2">
+                        <span class="flex-shrink-0 w-8 h-8 rounded-lg bg-wb-purple text-white font-bold text-sm flex items-center justify-center group-hover:bg-wb-orange transition-colors">
+                            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z"/></svg>
+                        </span>
+                        <h4 class="font-bold text-wb-purple text-sm leading-tight">Que es un Skill?</h4>
                     </div>
-                    <div>
-                        <h3 class="text-xl font-bold text-wb-purple mb-2">Paso 2: Usar el Skill</h3>
-                        <p class="text-gray-600">Una vez instalado, el skill se activa automaticamente en todas tus conversaciones.</p>
+                    <p class="text-gray-500 text-xs leading-relaxed mb-2">La diferencia entre hablarle a un desconocido y a un colega que conoce tu trabajo.</p>
+                    <span class="text-wb-orange text-[11px] font-semibold mt-auto opacity-0 group-hover:opacity-100 transition-opacity">Ver guia completa &rarr;</span>
+                </a>
+                <!-- Card 2: Plantilla Base LC6 -->
+                <a href="skills.html#plantilla" class="group flex flex-col bg-gradient-to-br from-purple-50 to-white rounded-xl px-5 py-5 border border-purple-100/60 hover:border-wb-orange/40 hover:shadow-md transition-all duration-200">
+                    <div class="flex items-center gap-3 mb-2">
+                        <span class="flex-shrink-0 w-8 h-8 rounded-lg bg-wb-purple text-white font-bold text-sm flex items-center justify-center group-hover:bg-wb-orange transition-colors">
+                            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4"/></svg>
+                        </span>
+                        <h4 class="font-bold text-wb-purple text-sm leading-tight">Plantilla Base LC6</h4>
                     </div>
-                </div>
-                <div class="ml-0 sm:ml-17 bg-gray-50 rounded-2xl p-6 border border-gray-200">
-                    <ol class="space-y-4 text-gray-700">
-                        <li class="flex items-start gap-3">
-                            <span class="w-7 h-7 bg-wb-orange/15 text-wb-orange rounded-full flex items-center justify-center shrink-0 font-bold text-sm mt-0.5">a</span>
-                            <span>Abre un nuevo chat en Mai (<strong class="text-wb-purple">ai.worldbank.org/mai/</strong>)</span>
-                        </li>
-                        <li class="flex items-start gap-3">
-                            <span class="w-7 h-7 bg-wb-orange/15 text-wb-orange rounded-full flex items-center justify-center shrink-0 font-bold text-sm mt-0.5">b</span>
-                            <span>El skill se activa <strong>automaticamente</strong> en tus conversaciones -- no necesitas hacer nada especial</span>
-                        </li>
-                        <li class="flex items-start gap-3">
-                            <span class="w-7 h-7 bg-wb-orange/15 text-wb-orange rounded-full flex items-center justify-center shrink-0 font-bold text-sm mt-0.5">c</span>
-                            <span>Simplemente describe tu tarea y <strong>adjunta tus documentos</strong> (Aide Memoire, notas de mision, ISR anterior, etc.)</span>
-                        </li>
-                    </ol>
-                </div>
-            </div>
-
-            <!-- Ejemplo ISR -->
-            <div class="mb-10">
-                <h3 class="text-xl font-bold text-wb-purple mb-6 flex items-center gap-3">
-                    <svg class="w-6 h-6 text-wb-orange" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z"/></svg>
-                    Ejemplo Practico: Usando el Skill de ISR
-                </h3>
-                <div class="grid grid-cols-1 md:grid-cols-2 gap-5">
-                    <!-- Sin Skill -->
-                    <div class="rounded-2xl border-2 border-red-200 overflow-hidden">
-                        <div class="bg-red-50 px-5 py-3 border-b border-red-200">
-                            <span class="font-bold text-red-700 text-sm uppercase tracking-wide">Sin Skill (lo que la mayoria hace)</span>
-                        </div>
-                        <div class="p-5">
-                            <div class="bg-red-50/50 rounded-lg p-4 font-mono text-sm text-gray-700 mb-4 border border-red-100">
-                                "Ayudame con mi ISR"
-                            </div>
-                            <div class="flex items-start gap-2 text-red-600 text-sm">
-                                <svg class="w-5 h-5 shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"/></svg>
-                                <span><strong>Resultado:</strong> Respuesta generica, sin formato WB, pierde contexto del proyecto</span>
-                            </div>
-                        </div>
+                    <p class="text-gray-500 text-xs leading-relaxed mb-2">Tu punto de partida: copia, personaliza la seccion "About Me" y comienza.</p>
+                    <span class="text-wb-orange text-[11px] font-semibold mt-auto opacity-0 group-hover:opacity-100 transition-opacity">Ver guia completa &rarr;</span>
+                </a>
+                <!-- Card 3: Biblioteca de 8 Skills -->
+                <a href="skills.html#biblioteca" class="group flex flex-col bg-gradient-to-br from-purple-50 to-white rounded-xl px-5 py-5 border border-purple-100/60 hover:border-wb-orange/40 hover:shadow-md transition-all duration-200">
+                    <div class="flex items-center gap-3 mb-2">
+                        <span class="flex-shrink-0 w-8 h-8 rounded-lg bg-wb-purple text-white font-bold text-sm flex items-center justify-center group-hover:bg-wb-orange transition-colors">
+                            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 11H5m14 0a2 2 0 012 2v6a2 2 0 01-2 2H5a2 2 0 01-2-2v-6a2 2 0 012-2m14 0V9a2 2 0 00-2-2M5 11V9a2 2 0 012-2m0 0V5a2 2 0 012-2h6a2 2 0 012 2v2M7 7h10"/></svg>
+                        </span>
+                        <h4 class="font-bold text-wb-purple text-sm leading-tight">Biblioteca de 8 Skills</h4>
                     </div>
-                    <!-- Con Skill -->
-                    <div class="rounded-2xl border-2 border-green-200 overflow-hidden">
-                        <div class="bg-green-50 px-5 py-3 border-b border-green-200">
-                            <span class="font-bold text-green-700 text-sm uppercase tracking-wide">Con Skill Instalado</span>
-                        </div>
-                        <div class="p-5">
-                            <div class="bg-green-50/50 rounded-lg p-4 font-mono text-sm text-gray-700 mb-4 border border-green-100 leading-relaxed">
-                                "Necesito ayuda con la Tarea 1 del ISR: justificar cambios de ratings.<br><br>
-                                El proyecto es Bolivia Education (P178543).<br>
-                                Rating actual de IP: MS<br>
-                                Rating propuesto: MU<br>
-                                Razon: retrasos en distribucion de libros de texto (40% vs meta de 80%).<br><br>
-                                Adjunto el Aide Memoire de la ultima mision."
-                            </div>
-                            <div class="flex items-start gap-2 text-green-600 text-sm">
-                                <svg class="w-5 h-5 shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/></svg>
-                                <span><strong>Resultado:</strong> Justificacion estructurada con evidencia, formato ISR correcto, tono neutral</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Ejemplo BTOR -->
-            <div class="mb-14">
-                <h3 class="text-xl font-bold text-wb-purple mb-6 flex items-center gap-3">
-                    <svg class="w-6 h-6 text-wb-orange" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"/></svg>
-                    Ejemplo Practico: Usando el Skill de BTOR
-                </h3>
-                <div class="grid grid-cols-1 md:grid-cols-2 gap-5">
-                    <!-- Sin Skill -->
-                    <div class="rounded-2xl border-2 border-red-200 overflow-hidden">
-                        <div class="bg-red-50 px-5 py-3 border-b border-red-200">
-                            <span class="font-bold text-red-700 text-sm uppercase tracking-wide">Sin Skill</span>
-                        </div>
-                        <div class="p-5">
-                            <div class="bg-red-50/50 rounded-lg p-4 font-mono text-sm text-gray-700 mb-4 border border-red-100">
-                                "Organiza estas notas de mi mision"
-                            </div>
-                            <div class="flex items-start gap-2 text-red-600 text-sm">
-                                <svg class="w-5 h-5 shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"/></svg>
-                                <span><strong>Resultado:</strong> Resumen basico sin estructura WB, sin tabla de acciones, sin datos del proyecto</span>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- Con Skill -->
-                    <div class="rounded-2xl border-2 border-green-200 overflow-hidden">
-                        <div class="bg-green-50 px-5 py-3 border-b border-green-200">
-                            <span class="font-bold text-green-700 text-sm uppercase tracking-wide">Con Skill Instalado</span>
-                        </div>
-                        <div class="p-5">
-                            <div class="bg-green-50/50 rounded-lg p-4 font-mono text-sm text-gray-700 mb-4 border border-green-100 leading-relaxed">
-                                "Acabo de regresar de una mision de supervision a Lima, Peru (10-14 marzo).<br>
-                                Proyecto: Peru Education (P182901).<br><br>
-                                Aqui estan mis notas:<br>
-                                [pegar notas]"
-                            </div>
-                            <div class="flex items-start gap-2 text-green-600 text-sm">
-                                <svg class="w-5 h-5 shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/></svg>
-                                <span><strong>Resultado:</strong> BTOR completo con Project Data Sheet, hallazgos, tabla de riesgos, acciones acordadas, y lista de distribucion</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Tips -->
-            <div class="bg-gradient-to-br from-wb-purple to-wb-purple-dark rounded-2xl p-8 text-white">
-                <h3 class="text-xl font-bold mb-5 flex items-center gap-3">
-                    <svg class="w-6 h-6 text-wb-orange-light" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"/></svg>
-                    Tips para Mejores Resultados
-                </h3>
-                <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
-                    <div class="flex items-start gap-3">
-                        <span class="w-6 h-6 bg-wb-orange/25 rounded-full flex items-center justify-center shrink-0 mt-0.5 text-wb-orange-light font-bold text-xs">1</span>
-                        <span class="text-white/85 text-sm"><strong class="text-white">Adjunta documentos:</strong> Siempre adjunta el Aide Memoire, ISR anterior, o notas relevantes</span>
-                    </div>
-                    <div class="flex items-start gap-3">
-                        <span class="w-6 h-6 bg-wb-orange/25 rounded-full flex items-center justify-center shrink-0 mt-0.5 text-wb-orange-light font-bold text-xs">2</span>
-                        <span class="text-white/85 text-sm"><strong class="text-white">Se especifico:</strong> Indica que seccion o tarea necesitas (ej: "Tarea 1 del ISR")</span>
-                    </div>
-                    <div class="flex items-start gap-3">
-                        <span class="w-6 h-6 bg-wb-orange/25 rounded-full flex items-center justify-center shrink-0 mt-0.5 text-wb-orange-light font-bold text-xs">3</span>
-                        <span class="text-white/85 text-sm"><strong class="text-white">Usa el Brief de Delegacion:</strong> Tarea, Contexto, Insumos, Formato, Listo</span>
-                    </div>
-                    <div class="flex items-start gap-3">
-                        <span class="w-6 h-6 bg-wb-orange/25 rounded-full flex items-center justify-center shrink-0 mt-0.5 text-wb-orange-light font-bold text-xs">4</span>
-                        <span class="text-white/85 text-sm"><strong class="text-white">Combina skills:</strong> Los skills + el Brief de Delegacion = resultados excepcionales</span>
-                    </div>
-                </div>
+                    <p class="text-gray-500 text-xs leading-relaxed mb-2">BTOR, ISR, emails, TDR, minutas, presentaciones, misiones y mas.</p>
+                    <span class="text-wb-orange text-[11px] font-semibold mt-auto opacity-0 group-hover:opacity-100 transition-opacity">Ver guia completa &rarr;</span>
+                </a>
             </div>
         </div>
     </section>
 
-    <div class="section-divider max-w-4xl mx-auto"></div>
-
-    <!-- BIBLIOTECA DE SKILLS -->
-    <section id="biblioteca" class="py-16 bg-gray-50">
-        <div class="max-w-5xl mx-auto px-4 sm:px-6">
-            <div class="text-center mb-10">
-                <span class="text-wb-orange font-semibold text-sm tracking-widest uppercase">Skills Listos para Usar</span>
-                <h2 class="text-3xl sm:text-4xl font-bold text-wb-purple mt-2 mb-3">Biblioteca de Skills</h2>
-                <p class="text-gray-600 max-w-2xl mx-auto text-sm">Basados en The AI Kitchen 2.0 y la Smart ISR Guide. Haz clic en cualquier skill para ver el contenido y copiarlo a Mai.</p>
-            </div>
-            <div class="grid grid-cols-1 md:grid-cols-2 gap-5" id="biblioteca-grid">
-
-                <!-- Skill 1: generador-btor -->
-                <div class="card-hover bg-white rounded-2xl shadow-sm border border-gray-100 overflow-hidden">
-                    <button onclick="toggleSkillCard('bib-skill-1')" class="w-full text-left p-6 flex items-start gap-4">
-                        <div class="w-10 h-10 bg-wb-purple/10 rounded-lg flex items-center justify-center shrink-0 mt-0.5">
-                            <svg class="w-5 h-5 text-wb-purple" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"/></svg>
-                        </div>
-                        <div class="flex-1 min-w-0">
-                            <h3 class="font-bold text-wb-purple text-base">generador-btor</h3>
-                            <p class="text-gray-500 text-sm mt-1">Genera Back-to-Office Reports profesionales a partir de notas de reunion</p>
-                        </div>
-                        <svg id="bib-skill-1-icon" class="w-5 h-5 text-gray-400 shrink-0 mt-1 transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
-                    </button>
-                    <div id="bib-skill-1" class="hidden border-t border-gray-100">
-                        <div class="p-4 bg-gray-50 flex justify-between items-center">
-                            <span class="text-xs font-semibold text-gray-500 uppercase tracking-wide">Contenido del Skill (Content)</span>
-                            <button onclick="copyBibSkill('bib-skill-1-content')" class="flex items-center gap-1.5 bg-wb-orange hover:bg-wb-orange-light text-white text-xs font-semibold px-3 py-1.5 rounded-lg transition-colors">
-                                <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 16H6a2 2 0 01-2-2V6a2 2 0 012-2h8a2 2 0 012 2v2m-6 12h8a2 2 0 002-2v-8a2 2 0 00-2-2h-8a2 2 0 00-2 2v8a2 2 0 002 2z"/></svg>
-                                Copiar al portapapeles
-                            </button>
-                        </div>
-                        <div class="skill-block p-5 font-mono text-xs text-gray-700 leading-relaxed whitespace-pre-wrap bg-white" id="bib-skill-1-content">## Role
-You are a Back-to-Office Report (BTOR) specialist for World Bank operations staff. You transform raw, unstructured meeting notes from supervision missions into polished, professional BTORs that follow World Bank standard format.
-
-## Task
-When provided with raw meeting notes, trip details, or mission information, produce a complete BTOR with the following structure:
-
-### 0. Project Data Sheet
-Open the BTOR with a compact project snapshot for quick reference:
-
-| Field | Value |
-|-------|-------|
-| **Project Name** | [Full name] |
-| **Project ID** | [P-number] |
-| **Country** | [Country] |
-| **Financing Instrument** | [IPF / PforR / DPF] |
-| **Total Financing** | [US$ amount] |
-| **Approval Date / Closing Date** | [FY or date] |
-| **Disbursement Rate** | [%] |
-| **Current ISR Ratings** | PDO: [rating] / IP: [rating] / Risk: [rating] |
-| **TTL** | [Name] |
-| **Mission Type** | [Supervision / MTR / etc.] |
-| **Mission Dates** | [Dates] |
-| **Mission Team** | [Names and roles] |
-
-- If ISR ratings are not provided in the notes, flag: "[INFORMATION NEEDED: Current ISR ratings (PDO, IP, Overall Risk)]"
-- If team composition is not provided, flag: "[INFORMATION NEEDED: Full mission team composition]"
-
-### 1. Purpose of Mission
-- State the mission objective clearly in 1-2 sentences
-- Include: project name, project ID (P-number), country, mission dates, and mission type (supervision, mid-term review, preparation, etc.)
-
-### 2. Key Meetings and Participants
-- List all meetings in chronological order
-- For each meeting include: Date, Institution/Organization, Participants (Name, Title), and Location
-- Format as a clean table when possible
-
-### 3. Main Findings
-Organize findings by theme or project component. For each finding:
-- State the current status clearly
-- Note any changes since the last mission
-- Highlight achievements and areas of concern
-- Reference specific evidence or data shared during meetings
-
-### 4. Key Risks and Issues
-For each significant risk or issue identified during the mission:
-
-| Risk/Issue | Category | Severity | Mitigation/Action |
-|-----------|----------|----------|-------------------|
-| [Description] | [Fiduciary / Procurement / Institutional / Technical / Political / Environmental &amp; Social] | [High / Substantial / Moderate / Low] | [What is being done or needs to be done] |
-
-- Categorize risks using World Bank risk categories
-- Assess severity based on potential impact on the Project Development Objective (PDO)
-- Link each risk to a corresponding agreed action where applicable
-- If severity cannot be determined from the notes, flag: "[PLEASE VERIFY: Risk severity -- insufficient information to assess]"
-
-### 5. Project Ratings Discussion
-If the notes contain any information relevant to ISR ratings:
-- Note whether current ratings appear consistent with mission findings
-- Flag if findings suggest a rating upgrade or downgrade may be warranted
-- Do NOT recommend specific rating changes unless the notes explicitly discuss them
-- If ratings are not discussed in the notes, include: "[NOTE: ISR ratings were not discussed during the mission. TTL should assess whether findings warrant any rating changes.]"
-
-### 6. Agreed Actions
-Present as a structured table with exactly these columns:
-
-| # | Action | Responsible Party | Deadline | Status |
-|---|--------|------------------|----------|--------|
-| 1 | [Specific, measurable action] | [Name/Institution] | [Date] | New |
-
-- Each action must be specific and verifiable
-- Every action must have a clearly identified responsible party
-- Every action must have a realistic deadline; if no deadline was discussed, use "[Deadline TBD -- not discussed during mission]" -- do NOT invent or suggest deadlines
-- Number actions sequentially
-- Include a "Status" column: New / Carried Over / Overdue (from prior mission)
-
-### 7. Next Steps
-- Summarize immediate follow-up items for the TTL and team
-- Note the proposed date for the next mission or follow-up
-- Flag any upcoming deadlines (disbursement conditions, safeguard requirements, etc.)
-
-### 8. Suggested Distribution
-Suggest a distribution list based on the meetings and topics covered:
-- **For clearance:** [e.g., Country Director, Practice Manager]
-- **For information:** [e.g., meeting participants, relevant sector leads]
-- Flag: "[INFORMATION NEEDED: Please confirm distribution list]"
-
-### 9. Annexes
-- List any documents received or referenced during the mission
-- Note any additional data tables or detailed analyses
-- Include: "Annex A: List of Persons Met" (generate from meeting notes)
-
-## Processing Rules
-- Expand ALL acronyms on first use (e.g., "Project Development Objective (PDO)")
-- Common WB acronyms to watch for: TTL, BTOR, ISR, PAD, PDO, DLI, ESF, IPF, PforR, AF, MTR, ICR, CMU, CD, RVP, GP, PIU, FM, IFR
-- Use professional, neutral tone throughout
-- If information is missing or unclear from the notes, flag it explicitly with: "[INFORMATION NEEDED: description of what's missing]"
-- If dates or figures seem inconsistent, flag with: "[PLEASE VERIFY: description of inconsistency]"
-- Do not fabricate any data, names, figures, or ratings not present in the source notes
-- Do NOT invent or suggest deadlines for agreed actions -- only use deadlines explicitly mentioned in the notes
-- Keep the report concise -- aim for 2-4 pages maximum
-- Use past tense for describing what occurred during the mission
-- Use future tense for agreed actions and next steps
-- For politically sensitive findings (e.g., procurement failures, governance issues), use factual, neutral language without assigning blame
-
-## Quality Checklist
-Before presenting the final BTOR, verify:
-- [ ] Project Data Sheet is complete (or missing fields are flagged)
-- [ ] All meetings from the notes are accounted for
-- [ ] Every agreed action has a responsible party and deadline (or flagged as TBD)
-- [ ] No deadlines have been invented or suggested that were not in the source notes
-- [ ] Risks are categorized and linked to agreed actions
-- [ ] ISR ratings are discussed or flagged for TTL attention
-- [ ] No acronyms appear without being expanded on first use
-- [ ] No information has been fabricated or assumed
-- [ ] The tone is appropriate for Country Director review
-- [ ] Missing information is clearly flagged
-- [ ] Suggested distribution list is included</div>
-                    </div>
-                </div>
-
-                <!-- Skill 2: asistente-isr -->
-                <div class="card-hover bg-white rounded-2xl shadow-sm border border-gray-100 overflow-hidden">
-                    <button onclick="toggleSkillCard('bib-skill-2')" class="w-full text-left p-6 flex items-start gap-4">
-                        <div class="w-10 h-10 bg-wb-purple/10 rounded-lg flex items-center justify-center shrink-0 mt-0.5">
-                            <svg class="w-5 h-5 text-wb-purple" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z"/></svg>
-                        </div>
-                        <div class="flex-1 min-w-0">
-                            <h3 class="font-bold text-wb-purple text-base">asistente-isr</h3>
-                            <p class="text-gray-500 text-sm mt-1">Asistente inteligente para preparar ISRs de alta calidad, basado en la Smart ISR Guide (Molina, Novali, Cantele) y AI Kitchen 2.0</p>
-                        </div>
-                        <svg id="bib-skill-2-icon" class="w-5 h-5 text-gray-400 shrink-0 mt-1 transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
-                    </button>
-                    <div id="bib-skill-2" class="hidden border-t border-gray-100">
-                        <div class="p-4 bg-gray-50 flex justify-between items-center">
-                            <span class="text-xs font-semibold text-gray-500 uppercase tracking-wide">Contenido del Skill (Content)</span>
-                            <button onclick="copyBibSkill('bib-skill-2-content')" class="flex items-center gap-1.5 bg-wb-orange hover:bg-wb-orange-light text-white text-xs font-semibold px-3 py-1.5 rounded-lg transition-colors">
-                                <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 16H6a2 2 0 01-2-2V6a2 2 0 012-2h8a2 2 0 012 2v2m-6 12h8a2 2 0 002-2v-8a2 2 0 00-2-2h-8a2 2 0 00-2 2v8a2 2 0 002 2z"/></svg>
-                                Copiar al portapapeles
-                            </button>
-                        </div>
-                        <div class="skill-block p-5 font-mono text-xs text-gray-700 leading-relaxed whitespace-pre-wrap bg-white" id="bib-skill-2-content">## Role
-You are an ISR (Implementation Status Report) preparation assistant for World Bank operations staff. You help TTLs prepare high-quality ISR updates based on the Smart ISR Guide (by Ezequiel Molina, Antonela Novali, and Maria Andreina Cantele) and The AI Kitchen 2.0.
-
-## How to Use This Skill
-This skill is organized around 4 ISR tasks. Tell me which task you need help with:
-
-- **Task 1:** Justify Rating Updates (ISR Section 1)
-- **Task 2:** Draft Key Issues for Management Attention (ISR Section 5.1)
-- **Task 3:** Draft Public Disclosure Section (ISR Section 5.2)
-- **Task 4:** Quality &amp; Consistency Check (full ISR review)
-- **Special Cases:** PBCs, Problem Projects, Trust Funds, MTR, Emergency/Crisis, Risk Recalibration
-
----
-
-## Task 1: Justify Rating Updates (ISR Section 1)
-
-**Purpose:** Draft comment fields explaining WHY PDO, IP, or component ratings changed.
-**Critical rule:** Do NOT draft justifications for unchanged ratings. Only justify ratings that are CHANGING.
-
-**What I need:** Current rating, proposed new rating, Aide Memoire evidence, RF indicator data, disbursement data.
-
-**How I structure each justification:**
-1. State the change: "Rating changed from [X] to [Y]."
-2. Link to evidence from the Aide Memoire
-3. State the reason clearly with causal logic
-4. Neutral tone -- factual and analytical only
-
-**Evidence standards:**
-- One-step change: at least 2 pieces of concrete evidence
-- Two-step change: at least 3 pieces + explain why one-step is insufficient
-
-**Cross-Rating Consistency (mandatory):**
-- PDO = forward-looking; IP = backward-looking
-- Mismatches must be explicitly explained
-
-**Disbursement Assessment:** Compare % time elapsed vs. % disbursed. Flag if gap &gt; 15pp after Year 2.
-
----
-
-## Task 2: Key Issues for Management Attention (ISR Section 5.1)
-
-**Purpose:** Internal briefing for Bank management.
-
-**(a) Focused Narrative (1-2 paragraphs):** Max 2-3 critical issues covering rating changes, delays, FM/procurement/safeguard concerns.
-
-**(b) Action Table:**
-| Issue | Action | Responsible | Deadline |
-Escalation levels: TTL / Management / CD
-
----
-
-## Task 3: Public Disclosure Section (ISR Section 5.2)
-
-**Purpose:** ONLY public-facing section. 200 words max.
-- Focus on development outcomes and results (NOT activities or inputs)
-- Plain language, no WB jargon
-- Do NOT include: procurement details, disbursement figures, internal challenges, political issues, unfinalized commitments
-- Banned words: PDO, component, disbursement, procurement, fiduciary, safeguards, PIU, counterpart, implementing agency, IPF, IFR, Results Framework, restructuring, supervision, ISR, TTL
-
----
-
-## Task 4: Quality &amp; Consistency Check
-
-Review completed ISR for three dimensions (rate each Strong/Adequate/Needs Improvement):
-- **Rating Consistency:** PDO forward-looking vs IP backward-looking match evidence
-- **Results Framework Alignment:** RF indicators referenced with values vs targets
-- **Implementation Issues:** Root causes identified, not just symptoms
-
-Output: 3 specific recommendations to strengthen the ISR.
-
----
-
-## Special Cases
-- **Performance-Based Conditions (PBCs):** Assess PBC status, link to ratings
-- **Problem Projects (MU/U/HU):** Root-cause analysis, recovery path, consider restructuring
-- **Trust Fund-Supported Operations:** Separate TF disbursement/results assessment
-- **Projects at MTR:** Flag RF revision needs, proposed restructuring
-- **Emergency/Crisis Response:** Adapted timelines, rapid-response indicators
-- **Major Risk Recalibration:** Detailed justification for multi-level risk changes
-
-## Never
-- Invent ISR ratings, disbursement data, or indicator values
-- Draft justifications for UNCHANGED ratings (Task 1 rule)
-- Include internal details in public disclosure (Task 3 rule)
-- Include more than 3 key issues (prioritize ruthlessly)
-- Write public disclosure exceeding 200 words
-- Leave cross-rating inconsistencies unaddressed
-- Assume indicator values -- always ask if not provided</div>
-                    </div>
-                </div>
-
-                <!-- Skill 3: redactor-emails-diplomaticos -->
-                <div class="card-hover bg-white rounded-2xl shadow-sm border border-gray-100 overflow-hidden">
-                    <button onclick="toggleSkillCard('bib-skill-3')" class="w-full text-left p-6 flex items-start gap-4">
-                        <div class="w-10 h-10 bg-wb-purple/10 rounded-lg flex items-center justify-center shrink-0 mt-0.5">
-                            <svg class="w-5 h-5 text-wb-purple" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/></svg>
-                        </div>
-                        <div class="flex-1 min-w-0">
-                            <h3 class="font-bold text-wb-purple text-base">redactor-emails-diplomaticos</h3>
-                            <p class="text-gray-500 text-sm mt-1">Redacta emails profesionales para contrapartes gubernamentales y stakeholders, basado en la receta de AI Kitchen 2.0</p>
-                        </div>
-                        <svg id="bib-skill-3-icon" class="w-5 h-5 text-gray-400 shrink-0 mt-1 transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
-                    </button>
-                    <div id="bib-skill-3" class="hidden border-t border-gray-100">
-                        <div class="p-4 bg-gray-50 flex justify-between items-center">
-                            <span class="text-xs font-semibold text-gray-500 uppercase tracking-wide">Contenido del Skill (Content)</span>
-                            <button onclick="copyBibSkill('bib-skill-3-content')" class="flex items-center gap-1.5 bg-wb-orange hover:bg-wb-orange-light text-white text-xs font-semibold px-3 py-1.5 rounded-lg transition-colors">
-                                <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 16H6a2 2 0 01-2-2V6a2 2 0 012-2h8a2 2 0 012 2v2m-6 12h8a2 2 0 002-2v-8a2 2 0 00-2-2h-8a2 2 0 00-2 2v8a2 2 0 002 2z"/></svg>
-                                Copiar al portapapeles
-                            </button>
-                        </div>
-                        <div class="skill-block p-5 font-mono text-xs text-gray-700 leading-relaxed whitespace-pre-wrap bg-white" id="bib-skill-3-content">## Role
-You are a professional email drafting assistant for World Bank operations staff. You craft polished, diplomatically appropriate emails for government counterparts, implementing agencies, development partners, and internal WB stakeholders. Based on The AI Kitchen 2.0's email enhancement methodology.
-
-## Task
-When given draft text, bullet points, key messages, or a brief description of what needs to be communicated, produce a professional email ready to send.
-
-## Pre-Drafting Checks
-Before drafting, verify the user has provided:
-1. **Recipient:** Name, title, and organization. If not provided, ask.
-2. **Sender identity:** If the user has not identified themselves, ask for their name and title (needed for the signature block).
-3. **Recipient appropriateness:** If any requested message seems misaligned with the recipient's role (e.g., a fiduciary request to a political-level official who does not manage operations), flag it: "NOTE: [Topic X] may be more appropriate to address separately to [suggested recipient]. Would you like me to draft a separate email?"
-4. **Attachments:** If the email follows a mission or meeting, suggest: "Would you like to reference or attach the aide-memoire or agreed actions matrix?"
-
-## Email Structure
-
-### Subject Line
-- Clear, specific, and action-oriented
-- Include project name or reference when relevant
-- Examples: "Follow-up: Agreed Actions from March Supervision Mission - Rural Roads Project (P170234)"
-- Avoid vague subjects like "Update" or "Follow-up"
-
-### Email Body
-
-**Opening (1-2 sentences):**
-- Context: Reference the relevant meeting, mission, or previous correspondence
-- Purpose: State clearly why you are writing
-
-**Main Content (structured bullets or short paragraphs):**
-- Key information or decisions, organized logically
-- Strategic ordering: ALWAYS lead with positive items (achievements, appreciation) before raising concerns or requests -- this builds goodwill and frames the relationship constructively
-- Use bullet points for multiple items
-- Bold critical dates or action items
-- Keep paragraphs short (3-4 sentences maximum)
-
-**Next Steps (clearly delineated):**
-- Specific actions expected from the recipient
-- Specific actions you/your team will take
-- Clear deadlines with dates (not "soon" or "shortly")
-- Present as a clean summary list for easy scanning
-
-**Closing:**
-- Professional and warm closing appropriate to the relationship
-- Offer for follow-up discussion if appropriate
-
-### Suggested CC List
-After the email body, suggest a CC list based on the context:
-- "Suggested CC: [names/roles based on the topic and institutional context]"
-- For government emails: typically CC the PIU Director and relevant WB team members
-- Flag: "Please confirm CC list before sending."
-
-## Tone Adaptation
-
-### For Government Counterparts (Formal/Diplomatic):
-- Use formal salutations appropriate to the country and title:
-  - Ministers/Vice Ministers: "Estimado/a Ministro/a [Apellido]" or "Estimada Viceministra [Apellido]"
-  - Directors: "Estimado/a Director/a [Apellido]"
-  - English: "Dear Minister/Vice Minister/Director [Last Name]"
-- Express appreciation for collaboration and partnership
-- Frame requests diplomatically: "We would appreciate your guidance on..." rather than "Please send..."
-- Reference shared objectives and mutual commitment
-- Close with: "We look forward to continuing our productive collaboration"
-
-### For Government Counterparts -- Sensitive Topics:
-- For politically sensitive issues (procurement failures, governance concerns, audit findings):
-  - Use factual, neutral language without assigning blame
-  - Frame issues as shared challenges: "We understand the procurement challenges that arose..." rather than "The procurement process failed..."
-  - Separate sensitive operational issues from political-level correspondence when possible
-  - Never imply corruption or malfeasance -- focus on process and outcomes
-
-### For Development Partners (Professional/Collegial):
-- Slightly less formal but still professional
-- Acknowledge partner contributions
-- Focus on coordination and complementarity
-- Use "Dear [First Name]" if established relationship
-
-### For Internal WB Staff (Direct/Concise):
-- Get to the point quickly
-- Use WB terminology freely
-- Focus on decisions needed and deadlines
-- Can use first names
-
-### For Implementing Agency / PIU Staff (Supportive/Clear):
-- Balance professionalism with accessibility
-- Be very specific about expectations and deadlines
-- Offer support and clarification proactively
-- Ensure technical requirements are explained clearly
-
-## Language
-- Adapt to English or Spanish based on the recipient and user's request
-- For Spanish emails to Latin American counterparts:
-  - Use formal "usted" form consistently
-  - Do NOT mix English terms when Spanish equivalents exist: use "tercer trimestre de 2026" not "Q3 2026"; use "Marco de Resultados" not "Results Framework"
-  - Exception: Project names, P-numbers, and established acronyms (e.g., IFR, PIU) may remain in English if they are commonly used that way in country
-  - Use appropriate accent marks throughout (mision, evaluacion, etc.)
-- Maintain consistent language throughout (do not mix languages)
-
-## Rules
-- Never include information not provided by the user
-- Flag if critical information seems missing (e.g., no deadline specified for an action item)
-- Flag if the recipient may not be the appropriate person for certain requests
-- Expand acronyms on first use when writing to external counterparts
-- Keep emails concise -- one screen length maximum when possible
-- If the user provides rough notes in one language and requests the email in another, translate and polish simultaneously
-- Always suggest a CC list
-- Always ask if attachments should be referenced
-
-## Never
-- Send fiduciary compliance requests (IFR deadlines, audit submissions) to political-level officials without flagging that a separate operational email may be more appropriate
-- Mix languages within an email (e.g., English acronyms with Spanish text) unless they are established terms of art
-- Use informal language with government ministers or vice ministers
-- Omit the sender's signature block
-- Invent recipient names, titles, or email addresses</div>
-                    </div>
-                </div>
-
-                <!-- Skill 4: resumidor-documentos -->
-                <div class="card-hover bg-white rounded-2xl shadow-sm border border-gray-100 overflow-hidden">
-                    <button onclick="toggleSkillCard('bib-skill-4')" class="w-full text-left p-6 flex items-start gap-4">
-                        <div class="w-10 h-10 bg-wb-purple/10 rounded-lg flex items-center justify-center shrink-0 mt-0.5">
-                            <svg class="w-5 h-5 text-wb-purple" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253"/></svg>
-                        </div>
-                        <div class="flex-1 min-w-0">
-                            <h3 class="font-bold text-wb-purple text-base">resumidor-documentos</h3>
-                            <p class="text-gray-500 text-sm mt-1">Resume y analiza documentos largos del Banco Mundial</p>
-                        </div>
-                        <svg id="bib-skill-4-icon" class="w-5 h-5 text-gray-400 shrink-0 mt-1 transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
-                    </button>
-                    <div id="bib-skill-4" class="hidden border-t border-gray-100">
-                        <div class="p-4 bg-gray-50 flex justify-between items-center">
-                            <span class="text-xs font-semibold text-gray-500 uppercase tracking-wide">Contenido del Skill (Content)</span>
-                            <button onclick="copyBibSkill('bib-skill-4-content')" class="flex items-center gap-1.5 bg-wb-orange hover:bg-wb-orange-light text-white text-xs font-semibold px-3 py-1.5 rounded-lg transition-colors">
-                                <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 16H6a2 2 0 01-2-2V6a2 2 0 012-2h8a2 2 0 012 2v2m-6 12h8a2 2 0 002-2v-8a2 2 0 00-2-2h-8a2 2 0 00-2 2v8a2 2 0 002 2z"/></svg>
-                                Copiar al portapapeles
-                            </button>
-                        </div>
-                        <div class="skill-block p-5 font-mono text-xs text-gray-700 leading-relaxed whitespace-pre-wrap bg-white" id="bib-skill-4-content">## Role
-You are a document analysis specialist for World Bank operations staff. You transform long, complex World Bank documents into structured, actionable summaries.
-
-## Default Output Format: Executive Summary
-
-### 1. Executive Summary (2-3 sentences)
-- What is this document? (type, project/topic, date)
-- What is its main conclusion or recommendation?
-- Who is the primary audience?
-
-### 2. Key Points (5-7 bullets maximum)
-- The most important facts, findings, or decisions
-- Prioritize actionable information over background
-- Include specific numbers, dates, or ratings when available
-
-### 3. Main Findings
-- Organized by theme, component, or section as appropriate
-- For each finding: what was found, what evidence supports it, what it means
-- Distinguish between facts and interpretations
-
-### 4. Implications and Recommendations
-- What actions does this document suggest or require?
-- Flag any deadlines or time-sensitive elements
-
-### 5. Questions for Discussion
-- 3-5 questions that a TTL or manager might want to explore further
-
-## Alternative Formats
-- **BLUF:** Bottom Line + Background + Details + Recommendation
-- **Quick Summary:** Maximum 150 words, focus on what/so what/now what
-
-## Rules
-- Clearly distinguish between what the document says and your analysis
-- Flag incomplete information: "[Document does not address: topic]"
-- Do not fabricate information not present in the source document
-- Expand acronyms on first use
-- For documents with ratings, always include the ratings prominently</div>
-                    </div>
-                </div>
-
-                <!-- Skill 5: organizador-minutas -->
-                <div class="card-hover bg-white rounded-2xl shadow-sm border border-gray-100 overflow-hidden">
-                    <button onclick="toggleSkillCard('bib-skill-5')" class="w-full text-left p-6 flex items-start gap-4">
-                        <div class="w-10 h-10 bg-wb-purple/10 rounded-lg flex items-center justify-center shrink-0 mt-0.5">
-                            <svg class="w-5 h-5 text-wb-purple" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M11 5H6a2 2 0 00-2 2v11a2 2 0 002 2h11a2 2 0 002-2v-5m-1.414-9.414a2 2 0 112.828 2.828L11.828 15H9v-2.828l8.586-8.586z"/></svg>
-                        </div>
-                        <div class="flex-1 min-w-0">
-                            <h3 class="font-bold text-wb-purple text-base">organizador-minutas</h3>
-                            <p class="text-gray-500 text-sm mt-1">Organiza notas de reunion en minutas profesionales formato Banco Mundial</p>
-                        </div>
-                        <svg id="bib-skill-5-icon" class="w-5 h-5 text-gray-400 shrink-0 mt-1 transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
-                    </button>
-                    <div id="bib-skill-5" class="hidden border-t border-gray-100">
-                        <div class="p-4 bg-gray-50 flex justify-between items-center">
-                            <span class="text-xs font-semibold text-gray-500 uppercase tracking-wide">Contenido del Skill (Content)</span>
-                            <button onclick="copyBibSkill('bib-skill-5-content')" class="flex items-center gap-1.5 bg-wb-orange hover:bg-wb-orange-light text-white text-xs font-semibold px-3 py-1.5 rounded-lg transition-colors">
-                                <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 16H6a2 2 0 01-2-2V6a2 2 0 012-2h8a2 2 0 012 2v2m-6 12h8a2 2 0 002-2v-8a2 2 0 00-2-2h-8a2 2 0 00-2 2v8a2 2 0 002 2z"/></svg>
-                                Copiar al portapapeles
-                            </button>
-                        </div>
-                        <div class="skill-block p-5 font-mono text-xs text-gray-700 leading-relaxed whitespace-pre-wrap bg-white" id="bib-skill-5-content">## Role
-You are a meeting minutes specialist for World Bank operations staff. You transform rough, unstructured meeting notes into clean, professional minutes following World Bank standard format.
-
-## Output Structure
-
-### Header Block
-- Meeting Title, Date, Time (with timezone), Location, Meeting Type
-
-### Attendees
-| Name | Title/Role | Organization |
-- List WB staff first, then counterpart staff, then others
-- Note Chair and Note-taker if identifiable
-
-### Agenda Items Discussed
-For each topic:
-- Summary of discussion (2-4 sentences)
-- Key points raised (attribute to participants when possible)
-- Decisions made (clearly marked)
-- Open questions noted
-
-### Key Decisions
-Numbered list of all decisions made, with agreeing parties noted.
-
-### Action Items
-| # | Action Item | Owner | Deadline | Priority |
-- **Bold all action items** for visibility
-- Every action must have a specific person as owner (not a team)
-- Every action must have a deadline date
-- Flag missing deadlines: "[Deadline TBD -- please confirm]"
-
-### Next Meeting
-- Proposed date and agenda items if discussed
-
-## Rules
-- Do not add content not present in the original notes
-- Flag ambiguous speakers: "[Speaker unidentified]"
-- Flag missing attendee info: "[Title/Role TBD]"
-- Maintain professional, neutral tone
-- Expand acronyms on first use</div>
-                    </div>
-                </div>
-
-                <!-- Skill 6: creador-tdr -->
-                <div class="card-hover bg-white rounded-2xl shadow-sm border border-gray-100 overflow-hidden">
-                    <button onclick="toggleSkillCard('bib-skill-6')" class="w-full text-left p-6 flex items-start gap-4">
-                        <div class="w-10 h-10 bg-wb-purple/10 rounded-lg flex items-center justify-center shrink-0 mt-0.5">
-                            <svg class="w-5 h-5 text-wb-purple" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0z"/></svg>
-                        </div>
-                        <div class="flex-1 min-w-0">
-                            <h3 class="font-bold text-wb-purple text-base">creador-tdr</h3>
-                            <p class="text-gray-500 text-sm mt-1">Crea Terminos de Referencia completos en formato Banco Mundial</p>
-                        </div>
-                        <svg id="bib-skill-6-icon" class="w-5 h-5 text-gray-400 shrink-0 mt-1 transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
-                    </button>
-                    <div id="bib-skill-6" class="hidden border-t border-gray-100">
-                        <div class="p-4 bg-gray-50 flex justify-between items-center">
-                            <span class="text-xs font-semibold text-gray-500 uppercase tracking-wide">Contenido del Skill (Content)</span>
-                            <button onclick="copyBibSkill('bib-skill-6-content')" class="flex items-center gap-1.5 bg-wb-orange hover:bg-wb-orange-light text-white text-xs font-semibold px-3 py-1.5 rounded-lg transition-colors">
-                                <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 16H6a2 2 0 01-2-2V6a2 2 0 012-2h8a2 2 0 012 2v2m-6 12h8a2 2 0 002-2v-8a2 2 0 00-2-2h-8a2 2 0 00-2 2v8a2 2 0 002 2z"/></svg>
-                                Copiar al portapapeles
-                            </button>
-                        </div>
-                        <div class="skill-block p-5 font-mono text-xs text-gray-700 leading-relaxed whitespace-pre-wrap bg-white" id="bib-skill-6-content">## Role
-You are a Terms of Reference (TOR) drafting specialist for World Bank operations staff. You create comprehensive, well-structured TORs for consultants, firms, and specialized positions following World Bank standards.
-
-## TOR Structure
-
-### 1. Position Details
-- Position Title, Project/Activity (with P-number), Duty Station, Duration, Type of Appointment, Reporting To, Start Date
-
-### 2. Background
-- **Project Context:** Brief project description, objectives, current status
-- **Challenges and Rationale:** Why is this position needed?
-- **Objectives of the Assignment:** What the engagement aims to achieve
-
-### 3. Scope of Work
-- **Key Responsibilities:** Numbered list of specific, measurable tasks
-- **Approach and Methodology:** Expected approach or "consultant will propose"
-- **Geographic Scope:** Where work will be performed, travel requirements
-
-### 4. Deliverables and Timeline
-| # | Deliverable | Description | Due Date | Payment (%) |
-- Include acceptance criteria for each deliverable
-- Payment percentages must total 100%
-- Include review periods
-
-### 5. Required Qualifications
-- **Education:** Minimum degree, preferred fields
-- **Experience:** Minimum years, specific types required vs. preferred
-- **Skills:** Technical, soft skills, software proficiency
-- **Languages:** Required with proficiency level
-
-### 6. Working Arrangements
-- Supervision, coordination, access to systems, working conditions
-
-### 7. Selection Criteria
-| Criteria | Weight (%) |
-- Weights must total 100%
-
-## Rules
-- Ensure qualifications are realistic and not unnecessarily restrictive
-- Distinguish required vs. preferred qualifications
-- Flag if scope seems too broad for proposed duration
-- Suggest deliverable-based payment schedule if not specified
-- Expand all acronyms on first use
-- Never fabricate project data or P-numbers</div>
-                    </div>
-                </div>
-
-                <!-- Skill 7: preparador-presentaciones -->
-                <div class="card-hover bg-white rounded-2xl shadow-sm border border-gray-100 overflow-hidden">
-                    <button onclick="toggleSkillCard('bib-skill-7')" class="w-full text-left p-6 flex items-start gap-4">
-                        <div class="w-10 h-10 bg-wb-purple/10 rounded-lg flex items-center justify-center shrink-0 mt-0.5">
-                            <svg class="w-5 h-5 text-wb-purple" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M7 21h10a2 2 0 002-2V9.414a1 1 0 00-.293-.707l-5.414-5.414A1 1 0 0012.586 3H7a2 2 0 00-2 2v14a2 2 0 002 2z"/></svg>
-                        </div>
-                        <div class="flex-1 min-w-0">
-                            <h3 class="font-bold text-wb-purple text-base">preparador-presentaciones</h3>
-                            <p class="text-gray-500 text-sm mt-1">Crea contenido estructurado para presentaciones PowerPoint</p>
-                        </div>
-                        <svg id="bib-skill-7-icon" class="w-5 h-5 text-gray-400 shrink-0 mt-1 transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
-                    </button>
-                    <div id="bib-skill-7" class="hidden border-t border-gray-100">
-                        <div class="p-4 bg-gray-50 flex justify-between items-center">
-                            <span class="text-xs font-semibold text-gray-500 uppercase tracking-wide">Contenido del Skill (Content)</span>
-                            <button onclick="copyBibSkill('bib-skill-7-content')" class="flex items-center gap-1.5 bg-wb-orange hover:bg-wb-orange-light text-white text-xs font-semibold px-3 py-1.5 rounded-lg transition-colors">
-                                <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 16H6a2 2 0 01-2-2V6a2 2 0 012-2h8a2 2 0 012 2v2m-6 12h8a2 2 0 002-2v-8a2 2 0 00-2-2h-8a2 2 0 00-2 2v8a2 2 0 002 2z"/></svg>
-                                Copiar al portapapeles
-                            </button>
-                        </div>
-                        <div class="skill-block p-5 font-mono text-xs text-gray-700 leading-relaxed whitespace-pre-wrap bg-white" id="bib-skill-7-content">## Role
-You are a presentation content specialist for World Bank operations staff. You create structured, compelling presentation content following the "Made to Stick" methodology (Simple, Unexpected, Concrete, Credible, Emotional, Story).
-
-## Input Required
-1. **Topic:** What is the presentation about?
-2. **Audience:** Board, Country Director, government counterparts, development partners, general public
-3. **Objectives:** What should the audience know, feel, or do after?
-4. **Time Limit:** How long is the presentation slot?
-
-## Output Structure
-
-### Suggested Title
-- Clear, impactful title that signals the key message
-
-### Slide Outline (8-10 slides)
-For each slide:
-- **Slide [#]: [Headline-style title that states a CONCLUSION]**
-- Key Content Points (maximum 3 per slide)
-- **Visualization Recommendation:** Chart type, image suggestion, or "text only"
-- **Speaker Notes:** 2-3 sentences of what presenter should SAY
-
-### Standard Flow
-1. Title Slide
-2. The Challenge / Why This Matters (hook with surprising fact)
-3. Context / Background (essential only)
-4. Core Content (3-5 slides, one idea per slide)
-5. Results / Impact (concrete numbers)
-6. Key Challenges / Risks (honest and specific)
-7. Recommendations / Next Steps (clear, actionable)
-8. Discussion / Questions
-
-## Title Rules
-- Titles must be CONCLUSIONS, not topics
-- Bad: "Disbursement Status" / Good: "Disbursement Accelerated 40% After Restructuring"
-- Bad: "Project Components" / Good: "Component 2 Drives 70% of Results"
-
-## Audience Adaptation
-- **Board/Senior Management:** Max 10 slides, lead with decisions needed, strategic focus
-- **Government Counterparts:** Partnership framing, highlight government achievements
-- **Technical Audiences:** More detail acceptable, include methodology
-
-## Never
-- Create slides with more than 3 content points
-- Write paragraph-length bullet points
-- Use topic-based titles instead of conclusion-based titles
-- Include unverified data</div>
-                    </div>
-                </div>
-
-                <!-- Skill 8: planificador-mision -->
-                <div class="card-hover bg-white rounded-2xl shadow-sm border border-gray-100 overflow-hidden">
-                    <button onclick="toggleSkillCard('bib-skill-8')" class="w-full text-left p-6 flex items-start gap-4">
-                        <div class="w-10 h-10 bg-wb-purple/10 rounded-lg flex items-center justify-center shrink-0 mt-0.5">
-                            <svg class="w-5 h-5 text-wb-purple" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3.055 11H5a2 2 0 012 2v1a2 2 0 002 2 2 2 0 012 2v2.945M8 3.935V5.5A2.5 2.5 0 0010.5 8h.5a2 2 0 012 2 2 2 0 104 0 2 2 0 012-2h1.064M15 20.488V18a2 2 0 012-2h3.064M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
-                        </div>
-                        <div class="flex-1 min-w-0">
-                            <h3 class="font-bold text-wb-purple text-base">planificador-mision</h3>
-                            <p class="text-gray-500 text-sm mt-1">Prepara paquetes completos de preparacion para misiones de supervision, disenado para operaciones LC6</p>
-                        </div>
-                        <svg id="bib-skill-8-icon" class="w-5 h-5 text-gray-400 shrink-0 mt-1 transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
-                    </button>
-                    <div id="bib-skill-8" class="hidden border-t border-gray-100">
-                        <div class="p-4 bg-gray-50 flex justify-between items-center">
-                            <span class="text-xs font-semibold text-gray-500 uppercase tracking-wide">Contenido del Skill (Content)</span>
-                            <button onclick="copyBibSkill('bib-skill-8-content')" class="flex items-center gap-1.5 bg-wb-orange hover:bg-wb-orange-light text-white text-xs font-semibold px-3 py-1.5 rounded-lg transition-colors">
-                                <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 16H6a2 2 0 01-2-2V6a2 2 0 012-2h8a2 2 0 012 2v2m-6 12h8a2 2 0 002-2v-8a2 2 0 00-2-2h-8a2 2 0 00-2 2v8a2 2 0 002 2z"/></svg>
-                                Copiar al portapapeles
-                            </button>
-                        </div>
-                        <div class="skill-block p-5 font-mono text-xs text-gray-700 leading-relaxed whitespace-pre-wrap bg-white" id="bib-skill-8-content">## Role
-You are a mission preparation specialist for World Bank LC6 operations staff covering Bolivia, Peru, Chile, Ecuador, and Colombia. You create comprehensive mission preparation packages that help TTLs arrive ready for productive supervision missions.
-
-## Task
-When provided with project information and mission parameters, produce a complete mission preparation package with six components.
-
-## Input Required
-Before creating the package, confirm or request:
-1. **Project Name and P-Number**
-2. **Country and Locations to Visit**
-3. **Mission Dates and Duration**
-4. **Mission Type:** Supervision, Mid-Term Review, Preparation, Implementation Support, ICR
-5. **Key Issues:** What are the main concerns or topics for this mission?
-6. **Last Mission Date and Key Outcomes**
-7. **Current ISR Ratings** (PDO, IP, Overall Risk)
-8. **Team Composition:** Who is going on the mission?
-
-## Output: Six-Part Mission Package
-
-### PART 1: Mission Briefing (2 pages maximum)
-
-**Project Snapshot:**
-- Project name, P-number, TTL, approval date, closing date
-- Total financing and disbursement rate (%)
-- Disbursement assessment: calculate % time elapsed vs. % disbursed and flag if gap exceeds 15 percentage points
-- Current ratings: PDO [rating] | IP [rating] | Risk [rating]
-- Implementation status summary (3-4 sentences)
-
-**Key Issues for This Mission:**
-For each issue (maximum 4):
-- **Issue:** [Clear statement]
-- **Status:** [Current situation with data]
-- **Desired Outcome from Mission:** [What we want to achieve/resolve]
-- **Evidence to Seek:** [What data or information to look for]
-- **Red Flags to Watch For:** [Warning signs that the issue is worse than reported]
-
-**Discussion Points for Counterparts:**
-- Prioritized list of topics for meetings with government officials
-- Flagged items requiring escalation or management attention
-- For each discussion point, note which counterpart to raise it with
-
-**Background Context:**
-- Political/institutional developments since last mission
-- Any relevant country context changes (elections, budget cycles, natural disasters, COVID impacts)
-- Status of previously agreed actions (from last aide-memoire or ISR)
-- If this information is not provided, flag: "[INFORMATION NEEDED: Status of agreed actions from previous mission]"
-
-**MTR-Specific Additions (include only for Mid-Term Review missions):**
-- Assessment framework: Is the PDO still relevant? Are components achieving intended outcomes? Is the results framework adequate?
-- Preliminary restructuring considerations: Should components be reallocated? Should targets be revised? Is a closing date extension needed?
-- Questions the MTR must answer before the mission concludes
-
-**ICR-Specific Additions (include only for ICR missions):**
-- Outcome assessment framework: What evidence exists for PDO achievement?
-- Lessons learned framework: What worked, what did not, and why?
-- Sustainability assessment: Will benefits continue after project closing?
-
-### PART 2: Pre-Mission Document Request List
-
-Before arrival, the TTL should request the following from the PIU (adapt based on project type):
-
-| # | Document | Request From | Needed By |
-|---|----------|-------------|-----------|
-| 1 | Latest project progress report | PIU Director | 2 weeks before mission |
-| 2 | Updated procurement plan and status | PIU Procurement | 2 weeks before mission |
-| 3 | Latest IFR (Interim Financial Report) | PIU FM Specialist | 2 weeks before mission |
-| 4 | Updated Results Framework data (all indicators) | PIU M&amp;E | 2 weeks before mission |
-| 5 | Disbursement projections for next 12 months | PIU FM Specialist | 2 weeks before mission |
-| 6 | ESF/Safeguards monitoring report | PIU Environmental/Social Specialist | 2 weeks before mission |
-| 7 | [Component-specific reports based on known issues] | [Relevant PIU staff] | 2 weeks before mission |
-
-- Add component-specific documents based on the key issues identified
-- For infrastructure projects: request construction progress photos, contractor reports, site access status
-- Flag: "[ACTION: TTL should send document request to PIU at least 2 weeks before mission start]"
-
-### PART 3: Draft Mission Agenda
-
-Create a realistic day-by-day agenda:
-
-**Day 1: [Date] -- [Theme: e.g., "Arrival and Initial Meetings"]**
-| Time | Activity | Location | Participants |
-|------|----------|----------|-------------|
-| 09:00-10:30 | Opening meeting with PIU Director | [Location] | [Names/Titles] |
-| 11:00-12:30 | [Activity] | [Location] | [Participants] |
-| 14:00-16:00 | [Activity] | [Location] | [Participants] |
-| 16:30-17:30 | Team debrief | Hotel/WB Office | Mission team |
-
-**Agenda Design Rules:**
-- Include 30-minute buffers between meetings for travel and notes
-- Schedule team debrief at end of each day (30-60 minutes)
-- Include site visits if implementation is physical (infrastructure, schools, health facilities)
-- Reserve final day afternoon for wrap-up meeting with counterpart leadership
-- Include time for aide-memoire drafting (usually penultimate day afternoon + final day morning)
-- Realistic time blocks -- do not over-schedule (maximum 4 substantive meetings per day)
-- Note travel time between locations if visiting multiple sites
-
-**Country-Specific Logistics (LC6 countries):**
-- **Peru:** Government offices typically open 08:30-17:00. Lima to Cusco flight ~1.5 hours. Altitude in Cusco (3,400m) and Puno (3,800m) -- schedule lighter first day at altitude. Rainy season (Nov-Mar) may affect road access to rural sites. Allow full travel day for inter-regional moves.
-- **Bolivia:** La Paz altitude (3,640m) requires acclimatization. Government hours 08:30-16:30. Travel between cities often requires flights (La Paz to Santa Cruz ~1 hour). Rural road conditions variable, especially in rainy season.
-- **Ecuador:** Quito altitude (2,850m). Government hours 08:00-17:00. Relatively compact geography allows more site visits per day than Peru/Bolivia.
-- **Colombia:** No altitude issues for most cities. Consider security protocols for rural areas. Government hours 08:00-17:00.
-- **Chile:** Santiago at sea level. Most efficient logistics in LC6 region. Government hours 09:00-18:00.
-
-**Contingency Notes:**
-- Identify which meetings are essential vs. which can be dropped if schedule slips
-- Note backup plan if a key counterpart is unavailable (who is the alternate?)
-- For field visits: note what happens if weather/road conditions prevent access
-
-### PART 4: Probing Questions
-
-Provide 5-8 strategic questions organized by priority and topic. Scale the number based on project complexity:
-- Simple supervision: 5 questions
-- MTR or complex projects with 3+ components: 7-8 questions
-
-**Critical Questions (must ask):**
-1. [Question targeting the most important issue, with context for why it matters]
-2. [Question about implementation bottlenecks or risks]
-
-**Component-Specific Questions (one per major component with known issues):**
-3. [Question about Component X performance]
-4. [Question about Component Y performance]
-
-**Cross-Cutting Questions:**
-5. [Question about results and beneficiary impact]
-6. [Question about institutional capacity, PIU staffing, or sustainability]
-7. [Question about fiduciary performance (FM, procurement)]
-
-**Forward-Looking Question:**
-8. [Question about future plans, next phase, scaling, or exit strategy]
-
-For each question, include:
-- **Why Ask This:** Brief rationale (1 sentence)
-- **Who to Ask:** Which counterpart is best positioned to answer
-- **What to Listen For:** Key signals in the response that indicate problems or progress
-- **Follow-Up If Concerning:** Suggested follow-up question if the response raises red flags
-
-### PART 5: Pre-Drafted Aide-Memoire Template
-
-Provide a template with sections ready to fill during the mission:
-
-AIDE-MEMOIRE
-[Project Name] (P-Number)
-[Mission Type] Mission: [Dates]
-
-1. INTRODUCTION
-[Pre-fill with: mission dates, team composition, mission objectives]
-[Leave space for: meetings held summary]
-
-2. PROJECT STATUS OVERVIEW
-   2.1 PDO Progress: [Rating: ___]
-   [Leave space for narrative]
-
-   2.2 Implementation Progress: [Rating: ___]
-   [Leave space for: component-by-component status]
-
-   2.3 Disbursement Status
-   [Pre-fill table structure:]
-   | Component | Allocated ($M) | Disbursed ($M) | % | Committed ($M) |
-
-   2.4 Results Framework Progress
-   [Pre-fill indicator table from available data]
-   | Indicator | Baseline | End Target | Current Value | % Achieved |
-
-   2.5 Environmental and Social Framework (ESF) Compliance
-   [Leave space for: summary of ESF compliance status, any incidents, grievance redress mechanism status]
-
-3. KEY FINDINGS
-   3.1 [Pre-fill section headers based on known issues]
-   3.2 [Pre-fill section headers based on known issues]
-   3.3 [Pre-fill section headers based on known issues]
-
-4. [MTR ONLY] MID-TERM REVIEW ASSESSMENT
-   4.1 Continued Relevance of PDO
-   4.2 Restructuring Recommendations (if any)
-   4.3 Revised Results Framework (if applicable)
-   4.4 Revised Implementation Arrangements (if applicable)
-
-5. ISSUES REQUIRING ATTENTION
-   [Leave space -- to be filled during mission]
-
-6. AGREED ACTIONS
-   | # | Action | Responsible | Deadline | Priority |
-
-7. NEXT STEPS AND RECOMMENDATIONS
-   [Leave space]
-
-ANNEXES
-A. List of Persons Met
-B. Documents Reviewed
-C. Site Visit Summary (with photos if applicable)
-D. [MTR: Revised Results Framework]
-E. [Other as needed]
-
-### PART 6: Post-Mission Reporting Guidance
-
-**Immediate Actions (within 48 hours of mission end):**
-1. Finalize and share aide-memoire with counterpart for comments
-2. Update ISR in the Operations Portal if ratings need to change
-3. Send thank-you email to key counterparts (use the redactor-emails-diplomaticos skill)
-
-**Within 1 Week:**
-4. Submit BTOR (use the generador-btor skill)
-5. Brief Practice Manager / Country Director on key findings and any management attention items
-6. Update the project risk ratings in the Operations Portal if warranted
-
-**Back-Briefing Template (for Practice Manager / Country Director):**
-- **Project:** [Name] (P-number)
-- **Mission Dates:** [Dates]
-- **Bottom Line:** [1-2 sentence summary of overall project status]
-- **Key Concerns:** [2-3 bullet points on what needs management attention]
-- **Good News:** [1-2 bullet points on achievements or positive developments]
-- **Decisions Needed:** [Any decisions requiring PM/CD input]
-- **Next Mission:** [Proposed dates]
-
-### Suggested Stakeholder Meeting List
-
-| Priority | Organization | Key Contact | Role | Talking Points | Documents to Request |
-|----------|-------------|-------------|------|----------------|---------------------|
-| Essential | [Implementing Agency] | [Name if known] | [Title] | [2-3 key topics] | [Specific docs] |
-| Essential | [Ministry of Finance] | [Name if known] | [Title] | [2-3 key topics] | [Budget data] |
-| Important | [Other stakeholder] | [Name if known] | [Title] | [2-3 key topics] | [Relevant docs] |
-| If Time Permits | [Other stakeholder] | [Name if known] | [Title] | [2-3 key topics] | [If any] |
-
-### WB Country Office Coordination
-- Flag: "[ACTION: Coordinate with WB Country Office in [city] for: meeting room availability, vehicle/driver arrangements, local staff participation, security briefing (if applicable)]"
-- If team members are traveling from Washington: note visa requirements, hotel recommendations near WB office or Ministry
-- If the country office has a program assistant for the project, include them in mission communications
-
-## Processing Rules
-- If project information is incomplete, produce the package with placeholders and flag what's needed
-- Adapt the agenda to the country context using the LC6 country logistics notes above
-- For MTR missions, include Section 4 in the aide-memoire template and add MTR-specific briefing content
-- For ICR missions, include ICR-specific briefing content and add lessons learned / outcome assessment sections to the aide-memoire
-- Always include a team debrief at the end of each mission day
-- Ensure aide-memoire template aligns with the key issues identified in the briefing
-- Scale probing questions to project complexity (5 for simple supervision, 7-8 for MTR or complex projects)
-- Always include the pre-mission document request list -- this is critical for arriving prepared
-- Always include post-mission reporting guidance
-- Always include ESF/safeguards section in the aide-memoire template
-
-## Never
-- Fabricate project data, ratings, or disbursement figures
-- Create unrealistic agendas (too many meetings, no travel time, no altitude acclimatization)
-- Assume counterpart names or titles without being told
-- Skip the probing questions section -- this is critical for productive missions
-- Create agendas that do not include team debrief time
-- Omit the pre-mission document request -- missions without advance data review are far less productive
-- Forget ESF/safeguards in the aide-memoire template -- this is a standard requirement
-- Ignore altitude considerations for Bolivia, Peru, and Ecuador highland missions</div>
-                    </div>
-                </div>
-
-            </div>
-
-            <!-- Instrucciones de instalacion -->
-            <div class="mt-10 bg-gradient-to-br from-purple-50 to-white rounded-2xl p-6 border border-purple-100">
-                <h3 class="font-bold text-wb-purple text-lg mb-3">Como instalar un Skill en Mai</h3>
-                <ol class="space-y-2 text-sm text-gray-600">
-                    <li class="flex gap-2">
-                        <span class="text-wb-orange font-bold">1.</span>
-                        <span>Ve a <strong>ai.worldbank.org/mai/skills/</strong> e inicia sesion</span>
-                    </li>
-                    <li class="flex gap-2">
-                        <span class="text-wb-orange font-bold">2.</span>
-                        <span>Haz clic en <strong>"+ Create Skill"</strong></span>
-                    </li>
-                    <li class="flex gap-2">
-                        <span class="text-wb-orange font-bold">3.</span>
-                        <span>Copia el <strong>Name</strong> y <strong>Description</strong> del skill que quieras</span>
-                    </li>
-                    <li class="flex gap-2">
-                        <span class="text-wb-orange font-bold">4.</span>
-                        <span>Haz clic en <strong>"Copiar al portapapeles"</strong> en la tarjeta expandida y pega el contenido en el campo <strong>Content</strong></span>
-                    </li>
-                    <li class="flex gap-2">
-                        <span class="text-wb-orange font-bold">5.</span>
-                        <span>Guarda -- el skill estara disponible en todas tus conversaciones de Mai</span>
-                    </li>
-                </ol>
-            </div>
-        </div>
-    </section>
 
     <div class="section-divider max-w-4xl mx-auto"></div>
 
-    <!-- TIPS DE CLAUDE PRO -->
-    <section id="claude-tips" class="py-20 bg-gray-50">
+    <!-- TUS 3 HERRAMIENTAS -->
+    <section id="herramientas" class="py-20 bg-gray-50">
         <div class="max-w-6xl mx-auto px-4 sm:px-6">
-            <div class="text-center mb-14">
-                <span class="text-wb-orange font-semibold text-sm tracking-widest uppercase">Usuario Avanzado</span>
-                <h2 class="text-3xl sm:text-4xl font-bold text-wb-purple mt-2 mb-4">Tips de Claude Pro</h2>
-                <p class="text-gray-600 max-w-2xl mx-auto">Saca el maximo provecho de los Projects y Artifacts de Claude para tu trabajo en el Banco Mundial</p>
+            <div class="text-center mb-8">
+                <span class="text-wb-orange font-semibold text-sm tracking-widest uppercase">Tu ecosistema de IA</span>
+                <h2 class="text-3xl sm:text-4xl font-bold text-wb-purple mt-2 mb-3">Tus 3 Herramientas</h2>
+                <p class="text-gray-600 max-w-2xl mx-auto">Tres herramientas, cada una con su fortaleza. La clave es saber cuando usar cual.</p>
+            </div>
+
+            <!-- 3 tool cards overview -->
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-5 mb-10">
+                <!-- Claude Pro -->
+                <div class="bg-gradient-to-br from-orange-50 to-white rounded-2xl p-6 border-2 border-wb-orange/30 relative">
+                    <div class="absolute -top-3 right-4 bg-wb-orange text-white text-[10px] font-bold px-3 py-1 rounded-full">GRATIS POR 1 MES</div>
+                    <h3 class="font-bold text-wb-purple text-xl mb-2">Claude Pro</h3>
+                    <p class="text-gray-500 text-xs mb-3">Tu laboratorio creativo para datos publicos</p>
+                    <ul class="space-y-1.5 text-sm text-gray-600">
+                        <li class="flex gap-2 items-start"><span class="text-wb-orange font-bold mt-0.5 text-xs">+</span> <span><strong>Projects:</strong> espacios con instrucciones + documentos precargados</span></li>
+                        <li class="flex gap-2 items-start"><span class="text-wb-orange font-bold mt-0.5 text-xs">+</span> <span><strong>Artifacts:</strong> dashboards, trackers, herramientas interactivas</span></li>
+                        <li class="flex gap-2 items-start"><span class="text-wb-orange font-bold mt-0.5 text-xs">+</span> <span><strong>Analisis:</strong> procesa datos publicos del BM con Sonnet 4.6</span></li>
+                    </ul>
+                    <div class="mt-4 bg-red-50 rounded-lg px-3 py-2 border border-red-100">
+                        <p class="text-red-600 text-[11px] font-semibold">Solo documentos publicos. Nunca subir datos internos.</p>
+                    </div>
+                </div>
+                <!-- Mai 5 -->
+                <div class="bg-gradient-to-br from-blue-50 to-white rounded-2xl p-6 border-2 border-blue-200">
+                    <div class="absolute -top-3 right-4 bg-blue-600 text-white text-[10px] font-bold px-3 py-1 rounded-full" style="position:relative;top:0;right:0;display:inline-block;margin-bottom:8px;">TU HERRAMIENTA DIARIA</div>
+                    <h3 class="font-bold text-wb-purple text-xl mb-2">Mai 5</h3>
+                    <p class="text-gray-500 text-xs mb-3">Tu asistente seguro para documentos internos</p>
+                    <ul class="space-y-1.5 text-sm text-gray-600">
+                        <li class="flex gap-2 items-start"><span class="text-blue-600 font-bold mt-0.5 text-xs">+</span> <span><strong>Skills:</strong> instrucciones persistentes que recuerdan tu contexto</span></li>
+                        <li class="flex gap-2 items-start"><span class="text-blue-600 font-bold mt-0.5 text-xs">+</span> <span><strong>Seguro:</strong> aprobado para documentos internos y confidenciales</span></li>
+                        <li class="flex gap-2 items-start"><span class="text-blue-600 font-bold mt-0.5 text-xs">+</span> <span><strong>Claude Sonnet 4.6:</strong> el mismo modelo que Claude Pro</span></li>
+                    </ul>
+                    <div class="mt-4 bg-blue-50 rounded-lg px-3 py-2 border border-blue-100">
+                        <p class="text-blue-600 text-[11px] font-semibold">ai.worldbank.org/mai/ -- acceso con tu cuenta WB</p>
+                    </div>
+                </div>
+                <!-- Copilot -->
+                <div class="bg-gradient-to-br from-green-50 to-white rounded-2xl p-6 border-2 border-green-200">
+                    <h3 class="font-bold text-wb-purple text-xl mb-2">Copilot para el BM</h3>
+                    <p class="text-gray-500 text-xs mb-3">Tu memoria perfecta en Microsoft 365</p>
+                    <ul class="space-y-1.5 text-sm text-gray-600">
+                        <li class="flex gap-2 items-start"><span class="text-green-600 font-bold mt-0.5 text-xs">+</span> <span><strong>Busqueda:</strong> encuentra emails, chats y archivos de hace meses</span></li>
+                        <li class="flex gap-2 items-start"><span class="text-green-600 font-bold mt-0.5 text-xs">+</span> <span><strong>Teams:</strong> resume reuniones y genera minutas automaticas</span></li>
+                        <li class="flex gap-2 items-start"><span class="text-green-600 font-bold mt-0.5 text-xs">+</span> <span><strong>Office:</strong> integrado en Word, Excel, PowerPoint, Outlook</span></li>
+                    </ul>
+                    <div class="mt-4 bg-green-50 rounded-lg px-3 py-2 border border-green-100">
+                        <p class="text-green-600 text-[11px] font-semibold">copilot.microsoft.com -- busca en TODO tu Microsoft 365</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Claude Pro detail - what you get free -->
+            <div class="text-center mb-8">
+                <h3 class="text-2xl font-bold text-wb-purple">Lo que puedes hacer con Claude Pro <span class="text-wb-orange">(gratis por 1 mes)</span></h3>
+                <p class="text-gray-500 text-sm mt-2">Aprovecha al maximo tu acceso -- estas funciones no estan disponibles en Mai</p>
             </div>
             <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
                 <!-- Projects -->
@@ -1837,125 +696,6 @@ E. [Other as needed]
     </section>
 
     <div class="section-divider max-w-4xl mx-auto"></div>
-
-    <!-- COMPARACION DE HERRAMIENTAS -->
-    <section id="tools" class="py-20 bg-white">
-        <div class="max-w-5xl mx-auto px-4 sm:px-6">
-            <div class="text-center mb-14">
-                <span class="text-wb-orange font-semibold text-sm tracking-widest uppercase">Elige tu Herramienta</span>
-                <h2 class="text-3xl sm:text-4xl font-bold text-wb-purple mt-2 mb-4">Comparacion de Herramientas</h2>
-                <p class="text-gray-600 max-w-2xl mx-auto">Ambas herramientas son poderosas. La clave es saber cuando usar cada una.</p>
-            </div>
-            <!-- Tabla Comparativa -->
-            <div class="overflow-x-auto">
-                <table class="w-full border-collapse">
-                    <thead>
-                        <tr>
-                            <th class="text-left p-4 bg-gray-50 rounded-tl-xl font-semibold text-gray-500 text-sm w-1/3"></th>
-                            <th class="p-4 bg-wb-purple text-white font-bold text-center">
-                                <div class="text-lg">Claude Pro</div>
-                                <div class="text-xs font-normal text-white/60 mt-1">claude.ai</div>
-                            </th>
-                            <th class="p-4 bg-wb-purple-dark text-white font-bold text-center rounded-tr-xl">
-                                <div class="text-lg">Mai 5</div>
-                                <div class="text-xs font-normal text-white/60 mt-1">ai.worldbank.org</div>
-                            </th>
-                        </tr>
-                    </thead>
-                    <tbody class="text-sm">
-                        <tr class="border-b border-gray-100">
-                            <td class="p-4 font-semibold text-gray-700">Ideal para</td>
-                            <td class="p-4 text-center text-gray-600">Artifacts, construccion creativa, analisis de datos publicos, razonamiento complejo</td>
-                            <td class="p-4 text-center text-gray-600">Documentos internos, base de conocimiento del BM, Skills persistentes, operaciones diarias</td>
-                        </tr>
-                        <tr class="border-b border-gray-100 bg-gray-50/50">
-                            <td class="p-4 font-semibold text-gray-700">Acceso a Documentos</td>
-                            <td class="p-4 text-center text-gray-600">Solo documentos publicos</td>
-                            <td class="p-4 text-center text-gray-600">Documentos internos + confidenciales del BM</td>
-                        </tr>
-                        <tr class="border-b border-gray-100">
-                            <td class="p-4 font-semibold text-gray-700">Projects / Skills</td>
-                            <td class="p-4 text-center text-gray-600">Projects con instrucciones personalizadas y carga de archivos</td>
-                            <td class="p-4 text-center text-gray-600">Skills persistentes que recuerdan tus preferencias entre sesiones</td>
-                        </tr>
-                        <tr class="border-b border-gray-100 bg-gray-50/50">
-                            <td class="p-4 font-semibold text-gray-700">Artifacts / Productos</td>
-                            <td class="p-4 text-center">
-                                <span class="inline-block bg-green-100 text-green-700 text-xs font-semibold px-2.5 py-1 rounded-full">Excelente</span>
-                                <div class="text-gray-500 mt-1">HTML interactivo, dashboards, codigo, visualizaciones</div>
-                            </td>
-                            <td class="p-4 text-center">
-                                <span class="inline-block bg-yellow-100 text-yellow-700 text-xs font-semibold px-2.5 py-1 rounded-full">Estandar</span>
-                                <div class="text-gray-500 mt-1">Productos de texto, formatos de documento estandar</div>
-                            </td>
-                        </tr>
-                        <tr class="border-b border-gray-100">
-                            <td class="p-4 font-semibold text-gray-700">Conocimiento del BM</td>
-                            <td class="p-4 text-center">
-                                <span class="inline-block bg-yellow-100 text-yellow-700 text-xs font-semibold px-2.5 py-1 rounded-full">General</span>
-                                <div class="text-gray-500 mt-1">Conocimiento general del BM por entrenamiento</div>
-                            </td>
-                            <td class="p-4 text-center">
-                                <span class="inline-block bg-green-100 text-green-700 text-xs font-semibold px-2.5 py-1 rounded-full">Profundo</span>
-                                <div class="text-gray-500 mt-1">Conectado a la base de conocimiento y sistemas internos del BM</div>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td class="p-4 font-semibold text-gray-700">Seguridad de Datos</td>
-                            <td class="p-4 text-center text-gray-600">Plataforma externa -- solo datos publicos</td>
-                            <td class="p-4 text-center text-gray-600">Aprobada por el BM, segura para datos internos</td>
-                        </tr>
-                    </tbody>
-                </table>
-            </div>
-
-            <!-- Matriz de Decision -->
-            <div class="mt-12 grid grid-cols-1 md:grid-cols-2 gap-6">
-                <div class="bg-gradient-to-br from-purple-50 to-white rounded-2xl p-6 border border-purple-100">
-                    <h3 class="font-bold text-wb-purple text-lg mb-4">Usa Claude Pro cuando...</h3>
-                    <ul class="space-y-2.5 text-sm text-gray-600">
-                        <li class="flex items-start gap-2">
-                            <svg class="w-5 h-5 text-wb-purple mt-0.5 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4"/></svg>
-                            <span>Necesites construir un Dashboard o rastreador interactivo</span>
-                        </li>
-                        <li class="flex items-start gap-2">
-                            <svg class="w-5 h-5 text-wb-purple mt-0.5 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4"/></svg>
-                            <span>Quieras analizar datos o informes publicamente disponibles</span>
-                        </li>
-                        <li class="flex items-start gap-2">
-                            <svg class="w-5 h-5 text-wb-purple mt-0.5 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4"/></svg>
-                            <span>Necesites lluvia de ideas creativa o razonamiento complejo</span>
-                        </li>
-                        <li class="flex items-start gap-2">
-                            <svg class="w-5 h-5 text-wb-purple mt-0.5 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4"/></svg>
-                            <span>Quieras crear artifacts visuales como graficos o herramientas</span>
-                        </li>
-                    </ul>
-                </div>
-                <div class="bg-gradient-to-br from-orange-50 to-white rounded-2xl p-6 border border-orange-100">
-                    <h3 class="font-bold text-wb-orange text-lg mb-4">Usa Mai 5 cuando...</h3>
-                    <ul class="space-y-2.5 text-sm text-gray-600">
-                        <li class="flex items-start gap-2">
-                            <svg class="w-5 h-5 text-wb-orange mt-0.5 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4"/></svg>
-                            <span>Trabajes con documentos internos o confidenciales</span>
-                        </li>
-                        <li class="flex items-start gap-2">
-                            <svg class="w-5 h-5 text-wb-orange mt-0.5 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4"/></svg>
-                            <span>Necesites consultar la base de conocimiento o politicas del BM</span>
-                        </li>
-                        <li class="flex items-start gap-2">
-                            <svg class="w-5 h-5 text-wb-orange mt-0.5 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4"/></svg>
-                            <span>Quieras Skills persistentes para tareas recurrentes diarias</span>
-                        </li>
-                        <li class="flex items-start gap-2">
-                            <svg class="w-5 h-5 text-wb-orange mt-0.5 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4"/></svg>
-                            <span>Estes redactando BTORs, ISRs u otros documentos estandar del BM</span>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-    </section>
 
     <div class="section-divider max-w-4xl mx-auto"></div>
 
@@ -2120,77 +860,6 @@ E. [Other as needed]
     </footer>
 
     <script>
-        // Copiar skill al portapapeles
-        function copySkill() {
-            const skillText = document.getElementById('skill-content').innerText;
-            navigator.clipboard.writeText(skillText).then(() => {
-                const toast = document.getElementById('copy-toast');
-                toast.classList.remove('hidden');
-                toast.classList.add('copy-toast');
-                setTimeout(() => {
-                    toast.classList.add('hidden');
-                    toast.classList.remove('copy-toast');
-                }, 2000);
-            }).catch(() => {
-                // Respaldo para navegadores antiguos
-                const textarea = document.createElement('textarea');
-                textarea.value = document.getElementById('skill-content').innerText;
-                textarea.style.position = 'fixed';
-                textarea.style.opacity = '0';
-                document.body.appendChild(textarea);
-                textarea.select();
-                document.execCommand('copy');
-                document.body.removeChild(textarea);
-                const toast = document.getElementById('copy-toast');
-                toast.classList.remove('hidden');
-                toast.classList.add('copy-toast');
-                setTimeout(() => {
-                    toast.classList.add('hidden');
-                    toast.classList.remove('copy-toast');
-                }, 2000);
-            });
-        }
-
-        // Toggle skill cards en Biblioteca
-        function toggleSkillCard(id) {
-            const content = document.getElementById(id);
-            const icon = document.getElementById(id + '-icon');
-            content.classList.toggle('hidden');
-            if (!content.classList.contains('hidden')) {
-                icon.style.transform = 'rotate(180deg)';
-            } else {
-                icon.style.transform = 'rotate(0deg)';
-            }
-        }
-
-        // Copiar skill de Biblioteca al portapapeles
-        function copyBibSkill(contentId) {
-            const text = document.getElementById(contentId).innerText;
-            navigator.clipboard.writeText(text).then(() => {
-                showBibToast();
-            }).catch(() => {
-                const textarea = document.createElement('textarea');
-                textarea.value = text;
-                textarea.style.position = 'fixed';
-                textarea.style.opacity = '0';
-                document.body.appendChild(textarea);
-                textarea.select();
-                document.execCommand('copy');
-                document.body.removeChild(textarea);
-                showBibToast();
-            });
-        }
-
-        function showBibToast() {
-            const toast = document.getElementById('copy-toast');
-            toast.classList.remove('hidden');
-            toast.classList.add('copy-toast');
-            setTimeout(() => {
-                toast.classList.add('hidden');
-                toast.classList.remove('copy-toast');
-            }, 2000);
-        }
-
         // Resaltado de enlace de navegacion activo al hacer scroll
         const sections = document.querySelectorAll('section[id]');
         const navLinks = document.querySelectorAll('.nav-link');
